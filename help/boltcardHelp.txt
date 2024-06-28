@@ -1,0 +1,51 @@
+﻿
+Bolt cards
+-----------------------------
+Bolt cards are physical cards or any anything that can have a NTAG (microchip and antenna) inside it. A Bolt card is linked to a custodial wallet online. They are programmed with apps found on the app stores and using a common smartphone (with NFC*). The main benefit of using a Bolt card is that it can be used anonymously, as it doesn’t have any MAC-address, GPS or IP-address etc. And it doesn’t require any Internet connection, battery or phone (with a sim-card). But for it to be really anonymously you need to create the account for the custodial wallet from a public computer. And program it using an offline NFC-capable device/phone. 
+Your Bolt cards data can be stored in the secure archive and then accessed through a graphical interface. For loading, reset and programming (using QR-codes that are scaned with a smartphone). 
+* Near Field Communication
+
+
+Programming the Bolt cards
+-----------------------------
+Note: a Bolt card that is already in use must first be wiped with a specific “reset code” before it can be re-used. That why it is always a good idea to save the reset code when creating/programming a new card. 
+On a computer create a user account at a LNBits Hub such as https://lates.lightningok.win etc. For privacy use a computer that are not linked to you, or use a Tor-browser if possible). 
+Create a wallet in your account.
+Activate the extensions “Bolt cards” and “LNURLp”. 
+Install apps “NFC tools” and "Boltscard NFC Programmer” in your phone.
+Read the Bolt cards “UID” with NFC tools and note down the code.
+On the computer open up Bolt cards under “Extensions”. Click the “+” sign to add a new card. Select the wallet you created and the amounts etc.
+Open up LNURLp under "Extension" and create a LNURL-paylink linked to your wallet.  
+Type in the “UID” that you had noted down.
+On the computer click the QR-code symbol for the card. Use the Bolt-app in the phone to scan it.
+Transfer the keys to the Bolt card by holding to the back of the phone and write to card.
+Copy the reset code, the program code and the LNURL-paylink (that you can made under "Extension" LNURLp). Paste these lines into a text file on a USB-stick.
+Then add some more lines so you have a textfile with eight lines (in the exact order):
+
+* LNURL paylink
+* Reset code
+* Program code
+* Withdrawal limit
+* Daly withdrawal limit
+* Link to the LN HUB 
+* LN User name
+* LN Hub password
+
+Alternativly get an encrypted file containing the above information. Then move it to the Offline device using an USB-stick (before decryption). The file must be signed and a copy of the senders public key needs to be on your local keychain (so you can verify the signature). In this way a Bolt card (the data) can be sent over the Internet AND the receiver can know who it came from AND that it was not been viewed or manipulated by anybody during transfer.  
+Make sure to only use a anonomous smartphone connected to a public wifi when programming a Bolt card. 
+
+Load the Bolt card with BTC
+-----------------------------
+Sending Bitcoin to your Bolt card should always be done using a Tor browser or a public computer (tha has no link to your identity).
+* Open a browser and go the wabpage ff.io or boltz.exchange/swap. Use liquid Bitcon (l-BTC) to save on fees.
+* Scan or copy the “Load”-QR code from the offline device and paste it into the “Destination”- field.
+* Enter the amount that you want to load the Bolt card with and press “Exchange now”.
+* Take your Bitcoin/Liquid wallet and scan the QR and send the requested funds and start the swap/transfer.
+
+To load the Bolt card from an offline wallet you simple need to scan the “WIF”-address (spend address) with Blue wallet or similar and then use that wallet to send funds to the exchange.
+
+
+Reset the Bolt card 
+-----------------------------
+If you like to re-use the Bolt card you have to reset it with the exact reset code that was generated when programming it in the first place. If you don't have this code you can't re-use the card, it's that simple.
+Open the "Boltscard NFC Programmer”-app on your phone and select reset option. Scan the reset QR-code with the phones camera. Hit reset card and hold the card up to the phones NFC chip (on the back of the phone). If it don't work please try one more time (as there could have been some disruption in the NFC-transfer).

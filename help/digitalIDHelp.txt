@@ -1,0 +1,53 @@
+﻿
+Digital ID
+-----------------------------
+A digital ID is linked to a private key and it's public key. A photo can be included in the key. 
+
+
+Creating a digital ID
+-----------------------------
+First make sure that the enryption key intended to be used with the new ID is generated. Then click "New ID" in the top left corner of the ID-menu. Insert the data as required (name and address etc). Have an appropriate photo ready to upload when instructed. The photo data size should be as small as possible (as it will get included in the key itself. 
+Dimentions of the photo should be 500 x 653 pixels and with good clarity. For more information please check local requirements. Only JPEG format is OK (ending with .jpg). 
+
+
+General use 
+-----------------------------
+First of all, don't create an ID using the key that encrypts/decrypts the offline device itself. It's good practice to create the ID's in a specific order. The first ID is for general use, the second is for professional use and third for gaming etc.
+Get signatures from the trusted sources. Merge them with the key using the offline device and then export a new public part of the ID/key (see below). This can then be distributed and used for communication, verfication and identification purposes. Remember, it's YOU that has control over your own digital ID. After creating new ID it's important that you make one or more backup's.
+
+Get validating signatures
+To increase the trust in your key it is good to get verification, or signatures, from many trusted sources. In this way somebody that don't know you directly can look and see what other institutions, companies and persons has verified your key and then hopefully trust its legit.
+
+
+Make your key that you use for the digital ID known
+-----------------------------
+To make others aware of your key you can attach it to all your emails, post it on your website and put your unique key fingerprint on your social media profiles.
+There are public keyservers that you can use to upload your public key to. In that way anyone finding your key's ID or fingerprint (in your emails, on your social media profile or homepage etc) can either click on a link to get to the key on the public server or go there manually and search for it.
+The most known public keyservers are:
+* keys.openpgp.org
+* https://keyserver.ubuntu.com
+* pgp.mit.edu
+
+Sending your public key to a keyserver
+-----------------------------
+Use a GPG- client program or use command "gpg --keyserver <key-server> --send-keys <key-id or fingerprint>". When using the "--send-keys" command the email for the key don't get added. This is good for privacy and makes it more flexible as the email address can change over the years.
+Example: gpg --keyserver keys.openpgp.org --send-keys F4FBFC9F52F2713E
+
+Alternatively export your public key from the offline device to an USB-stick and then use an online computer and go to https://keys.openpgp.org/upload (or the keyserver you use). 
+
+Getting a key from a keyserver
+-----------------------------
+With an online computer use command "gpg --keyserver <key-server> --recv-keys <key-id or fingerprint>".
+
+Example: gpg --keyserver keys.openpgp.org --recv-keys B4FAFA9F52F2763E
+
+To move the key to the offline device you first need to export the public key you downloaded from the local keychain to a file. Use command "gpg --export --armor <key ID or fingerprint>".
+Then copy the generated file to an USB-stick and move to the offline device for import. 
+ 
+Updating your public key on a public keychain (after adding validating signatures or subkeys to it) 
+-----------------------------
+1. Export a new public key- file from the master key using the offline device.
+2. Move the USB to an online computer.
+3. Go to https://keys.openpgp.org/upload (or the keyserver you use) and upload the updated public key. Alternatively, first import the key to the online computers local keychain (gpg --import <key ID>) and then use command: 
+"gpg --keyserver <key-server> --send-keys <key-id or fingerprint>".
+

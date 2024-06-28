@@ -1,0 +1,11 @@
+﻿
+GPG 
+-----------------------------
+GPG stands for Gnu Privacy Guard and is an open source encryption software provided with almost all personal computers today (see https:\\gnupg.org). The offline device uses only asymetric encryption (called RSA) with a key length of 4096 bits. This is considered unbreakable encryption (with the technology we have today). Keys can do many things such as encrypting and decrypting emails, make signatures or create encrypted "tunnels" between computers over the open Internet. Keys can also be split into several parts. Each part will have a specific capability/function. One part of a key is called “public key” and that is given to others so that they can encrypt a file, or message, that only the secret part of the key can read. But it also allows others to verify a signatures that you have made saying that "this file is really from me". The master key is generated offline and is always kept offline (on the offline devices local keychain). It is only used to generate subkeys. After generating a new private subkey there is a need to also generate a new public key and ask everyone to replace the old one that they are using. 
+After issuing a new key or subkey on the offline device it’s important to make a backup. This means that the key is exported from the local keychain and placed in the secure archive (on the offline device). So when a backup for the offline device is made, the secret keys will also be backed up. They can then be recovered by simply importing them to a new local keychain. 
+
+When creating a new key on the offline device that is intended to be used for external communication (such as email etc) and the check-box "Only certify" is checked. This will tell the offline device to generate one master key and three subkeys (validity 3 years). The subkeys can then be moved to a Yubikey, smartphone and/or computer. If you plan to move them to a Yubikey make sure they are backed-up first as the moving process is an destructive process and the key's needs to be recovered from backup if you plan to use them also on other devices (such as with an email client locally on your computer). 
+
+Only certain functions of GnuPG is incorporated in the offline device for ease of use and convenience.
+
+If the subkeys are about to expire you create a new set of subkeys. Old subkey's should not be deleted. 
