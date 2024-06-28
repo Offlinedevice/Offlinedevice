@@ -1,6 +1,6 @@
 
 # Offline device
-<p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/help/getstartedHelp.txt"></p>
+<p align="center"><img src="https://github.com/Offlinedevice/project/blob/d34ca6aa03fe1624e95431d6ab1dc0d65a6a4274/Offline_device_start.png"></p>
 
 <p align="center"><img src="https://github.com/Offlinedevice/project/blob/main/Offline_device_screeshot.png"></p>
 
@@ -47,10 +47,10 @@ Connect the Offline device with cables to a monitor, a keyboard and a mouse. It 
 
 ## Start here
 ### Build hardware
-Build the Offline device using common parts:
+Build the Offline device using common parts. See "Getting started guide".
 
 ### 3D- print parts 
-Print the plastic parts you need:
+Print the plastic parts you need. See folder "3D".
 
 ### Download and burn image
 Download the image and burn the image to a microSD-card (min 32 gb) with balenaEtcher or Raspberry Pi Imager:
