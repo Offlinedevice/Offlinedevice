@@ -34,10 +34,10 @@ Never leave the room while logged in to your account. Stealing information is do
 Data security 
 -----------------------------
 Keeping data/bitcoin in self-custody is a much more secure and robust way instead of centralizing and trusting a central authority. It's like having a ton of gold but you can only access it if somebody else unlocks the vaults door. Is that gold really yours then!?!
-Encryption is the most efficient and safe way of securing ones data. The important part is that it has to be YOU that generate the encryption keys. And that you do it in a secure way and private way (offline). 
+Encryption is the most efficient and safe way of securing ones data. The important part is that it has to be YOU that generate the encryption keys. And that you do it in a secure and private way (offline). 
 Encryption keys that can be generated with the offline device includes FIDO2 passwordsless authentication keys, bitcoin wallets addresses, SSH-communication keys, encryption/decryption keys and signing keys. These keys uses encyption that can't be broken no matter how much resources the attacker has.
-For the average individual the threat of data getting stolen comes from online attacker. So keeping the encryption keys and the secret data offline is very important. But when making backup's and giving them to a friend, company and/or relative you don't want to but the burden and responsibility on them to keep it safe.
-Then it's better to give the encrypted data to one and the secret password to somebody else. That way the risks are reduced.
+For the average individual the threat of data getting stolen comes from online attacker. So keeping the encryption keys and the secret data offline is very important. But when making backup's and giving them to a friend, company and/or relative you don't want to put the burden and responsibility on them to keep it safe.
+Then it's better to give the encrypted data to one person and the secret password to somebody else. That way the risks are reduced.
 
  
 Getting started
@@ -129,7 +129,7 @@ Check that the hardware clock has been synced
 	sudo hwclock -r (if not synced RETRY command "sudo hwclock -w")
 
 Install drivers for Smart card reader, Omnikey 5022 (optional)
-	sudo apt install libccid #libpcsclite pcsc-tools opensc #libsystemd #libusb #libpcsc
+	sudo apt install libccid #libpcsclite pcsc-tools opensc pywallet #libsystemd #libusb #libpcsc
 
 Place a picture in folder /home/user1/venvpython named background.jpeg. This will be used for the GUI. Best resulution is 1920 x 1080 pixel. Also make sure the following pictures are in folder /home/user1/venvpython:
 	boltcardicon.JPG
@@ -149,6 +149,7 @@ Place a picture in folder /home/user1/venvpython named background.jpeg. This wil
 	lightbackgroundmid.jpg
 	iconopen.png
 	iconlocked.png
+	ID_map.png
 
 Create a virtual enviroment for python3:
 	sudo apt install python3-venv
