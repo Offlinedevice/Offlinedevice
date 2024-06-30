@@ -53,13 +53,16 @@ Build the Offline device using common parts. See "Getting started guide".
 Print the plastic parts you need. See folder "3D".
 
 ### Download and burn image
-Download the image and burn the image to a microSD-card (min 32 gb) with balenaEtcher or Raspberry Pi Imager:
- 
+Download [the image](https://www.mediafire.com/file/574iz7150bn8rz9/offline_device_0_2_5.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher or Raspberry Pi Imager:
+
 <p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/balenaEtcher_screenshot.PNG"></p>
 
 <p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/Raspberry_Pi_imager.PNG"></p>
 
 <p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/Raspberry_Pi_imager_Use_custom.PNG"></p>
+
+### Install the software yourself
+You can choose to install the operating system, programs and libraries yourself. See details in the "Getting started"- document. 
 
 ## Digital IDs
 Controlling your own digital ID is as important as controlling your own digital money. The Offline device gives an easy way to create IDs and encrypted files that can be uploaded to public keyservers around the word. Including picture ID/key. 
