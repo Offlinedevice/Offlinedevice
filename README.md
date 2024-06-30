@@ -79,7 +79,7 @@ Using a Raspberry Pi keyboard and mouse supports in getting the Locales (correct
 
 ## Release + Commit Verification
 
-All releases and commits as of June 28, 2024 are signed by key `TBD` (offlinedevice@cyb.org).
+All releases and commits as of June 28, 2024 are signed by key `BEF873B4691EB2C24E399445FE86F26704C3F74A` (offlinedevice@cyb.org).
 
 ### Past Keys
 None.
