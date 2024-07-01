@@ -15,7 +15,7 @@ The Offline device is a tool for generating and managing encryption keys, settin
 
 
 General use:
-
+-----------------------------
 1. Create an account.
 Tip: Choose a strong password. But one that you can still remember.
 
@@ -24,7 +24,7 @@ Tip: A key used with a Yubikey can be an very long and complex passphrase as the
 
 3. Store important files, bitcoin wallets data and passwords etc in the secure archive.
 
-4. Make one or more backup's of the Secure archive on USB-sticks (first do backup for any new or modified secret key to the Secure archive). 
+4. Make one or more backup's of the Secure archive on USB-sticks (first do a backup for any new or modified secret key to the Secure archive). 
 Tip: Store the USB- backup's on multiple physical locations for safety. Don't store both the backup AND the secret password with the same person. That would make the other person responsible for safety in a way that he/she is probably not able to handle.
 
 5. Export public keys and secret subkeys and transfer them to a Yubikeys, online computers and/or smartphone (for encrypting emails etc).
@@ -78,7 +78,7 @@ Software:
     • Raspberry PI Debian 64 bit operating system
     • CUPS, Common UNIX Printing System (optional)
 
-See https://github.com/Offlinedevice for details and files to download. If you don't want to build it from scratch (as described below) then simply download the "image"- file (link found on Github- page) and burn it to a microSD-card. Done!
+See https://github.com/Offlinedevice for details and file download. If you don't want to build it from scratch (as described below) then simply download the "image"- file (link on Github- page) and burn it to a microSD-card. Done!
 
 Building a offline device from scratch 
 --------------------------------------
