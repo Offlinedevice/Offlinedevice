@@ -1,1 +1,1 @@
-# Files with code. Including a full image that can be burned to a microSD- card with minimum 32 gb storage (coming soon..). The image is only operational with the hardware: Raspberry Pi zero 2 W + RTC (Real Time Clock), DS1307 (connected at pins 1-9).
+# Files with code. A full image that can be burned to a microSD- card with minimum 32 gb storage in linked on the Project main page. Note the image is only operational with the specified hardware: Raspberry Pi zero 2 W + RTC (Real Time Clock), DS1307 (connected at pins 1-10).
