@@ -1,32 +1,35 @@
-﻿
+
 Intro
 -----------------------------
-The Offline device is a tool for generating and managing encryption keys, setting up a Yubikey 5C NFC (hardware device) and storing files and folders securely using encryption. It is built using standard components and the plastic casing can be printed with a common 3D-printer. The offline device must never be connected to the Internet. All transfer of data to and from the device are done using USB-sticks or scanning QR-codes on the screen. The offline device can: 
+The Offline device is a tool for generating and managing encryption keys, setting up a Yubikey 5C NFC (hardware device) and storing files securely using encryption. It is built using standard components and the plastic casing can be printed with a common 3D-printer. The offline device must never be connected to the Internet. All transfer of data to and from the device are done using USB-sticks or scanning QR-codes on the screen. The offline device can: 
 * Generate and use encryption keys (encryption/decryption, authentication, signing of keys and document etc).
 * Work as a password manager and backup for account login details and Bitcoin seed words etc.
 * Managing external security key such as the Yubikey 5C NFC (initializing, changing settings, transferring subkeys etc).
-* Store a secure archive that are encrypted on the device and also stored on a USB-stick. It can restore itself from the USB-backup.
+* Store a secure archive that is encrypted on the device and also make backup's on a USB-stick. It can restore itself from the USB-backup.
 * Issuing and managing digital ID’s.
 * Receive and store secure copies of Bolt cards (load address, reset address and programming keys).
 * Generate and store BTC wallet addresses (offline cold storage).
-* Store details of FIDO keys.
+* Store details of FIDO keys (hardware key for passwordless logins).
 * Encrypt/decrypt messages/texts and check signatures etc.
 * Sign public encryption keys and files.
 
 
 General use:
 
-1. Create an account with encryption keys.
-Tip: choose strong passwords. Especially for a key used with Yubikey as there is no need to remember/use it. The Yubikey uses only a 6 digit PIN to perform cryptographic operations (three failed attempt locks the Yubikey).
-	
-2. Store bitcoin wallets data, passwords etc in the secure archive.
+1. Create an account.
+Tip: Choose a strong password. But one that you can still remember.
 
-3. Make one or more backup on USB-sticks (including backup of the secret keys).
-Tip: Store the USB- backups on multiple physical locations for safety. Don't store both the backup AND the secret password with the same person. That would make the other person responsible for safety in a way that he/she is probably not able to handle.
+2. Create an extra encryption key to use for external communication. Subkeys can be moved to a hardware key (Yubikey 5C) or to smartphones/computers. 	
+Tip: A key used with a Yubikey can be an very long and complex passphrase as there is no need to remember/use it. The Yubikey uses only a 6 digit PIN to perform cryptographic operations (three failed attempt locks the Yubikey).
 
-4. Export public keys and secret subkeys to files and transfer them from the offline device to online computers and smartphone (encrypting emails etc).
+3. Store important files, bitcoin wallets data and passwords etc in the secure archive.
 
-5. Make regular backups whenever important data is added/modified.
+4. Make one or more backup's of the Secure archive on USB-sticks (first do backup for any new or modified secret key to the Secure archive). 
+Tip: Store the USB- backup's on multiple physical locations for safety. Don't store both the backup AND the secret password with the same person. That would make the other person responsible for safety in a way that he/she is probably not able to handle.
+
+5. Export public keys and secret subkeys and transfer them to a Yubikeys, online computers and/or smartphone (for encrypting emails etc).
+
+6. Make regular backups whenever important data is added/modified.
 
 Never leave the room while logged in to your account. Stealing information is done in a split second and it's more or less impossible to prove who did it.
 
@@ -34,17 +37,17 @@ Never leave the room while logged in to your account. Stealing information is do
 Data security 
 -----------------------------
 Keeping data/bitcoin in self-custody is a much more secure and robust way instead of centralizing and trusting a central authority. It's like having a ton of gold but you can only access it if somebody else unlocks the vaults door. Is that gold really yours then!?!
-Encryption is the most efficient and safe way of securing ones data. The important part is that it has to be YOU that generate the encryption keys. And that you do it in a secure and private way (offline). 
+Encryption is the most efficient and safe way of securing ones data. The important part is that it has to be YOU that generate the encryption keys. And that you do it in a secure way and private way (offline). 
 Encryption keys that can be generated with the offline device includes FIDO2 passwordsless authentication keys, bitcoin wallets addresses, SSH-communication keys, encryption/decryption keys and signing keys. These keys uses encyption that can't be broken no matter how much resources the attacker has.
-For the average individual the threat of data getting stolen comes from online attacker. So keeping the encryption keys and the secret data offline is very important. But when making backup's and giving them to a friend, company and/or relative you don't want to put the burden and responsibility on them to keep it safe.
-Then it's better to give the encrypted data to one person and the secret password to somebody else. That way the risks are reduced.
+For the average individual the threat of data getting stolen comes from online attacker. So keeping the encryption keys and the secret data offline is very important. But when making backup's and giving them to a friend, company and/or relative you don't want to but the burden and responsibility on them to keep it safe.
+Then it's better to give the encrypted data to one and the secret password to somebody else. That way the risks are reduced.
 
  
 Getting started
 -----------------------------
-Use a cord to connect the keyboard and mouse. If using a Raspberry PI keyboard and mouse the key layout and language will automatically be configured. The screen connects using a mini-HDMI connector.
+Use a cord to connect a keyboard and mouse. If using a Raspberry PI keyboard and mouse the key layout and language will automatically be configured. The screen connects using a mini-HDMI connector.
 The offline device has a built-in hardware clock (with battery). This allows it to keep the date and time, even if it's not connected to a power supply for long periods. But it is necessary to first set the time and date. Go to the settings page by clicking on the "Settings"- button at the top left corner. Under settings it is also possible to set the thee and colors (if logged in to an account).
-On the main page there is a button called "Create new account". This will give two options. First option is to create an account together with an additional key for external communication (first key is for encrypting/decrypting the offline device itself). If selecting this option you will be guided to set-up what is needed for starting to use the offline device including configuring and loading a Yubikey 5C with subkeys (if you have a Yubikey). 
+On the main page there is a button called "Start" or "Create new account". This will give two options. First option is to create an account together with an additional key for external communication (first key is for encrypting/decrypting the offline device itself). If selecting this option you will be guided to set-up what is needed for starting to use the offline device including configuring and loading a Yubikey 5C with subkeys (if you have a Yubikey). 
 
 The automatically generated subkeys (encrypt, sign and authenticate) are time limited (select 1 or 3 years). These you can move out from the offline device to your computers and smartphones etc. The public key you give to anyone and everyone. A backup will also be generated that is to be moved to a separate USB-device (redundancy in case of damage, fire or theft etc). So make sure you have a USB-stick ready!
 
@@ -64,8 +67,8 @@ Specifications
 -----------------------------
 Offline device parts list:
 
-    • Raspberry PI case (can be printed from files using 3D printer) 
-    • Raspberry PI zero 2 W (with male headers 2,54 mm for RTC-board, pin 1-9)
+    • Raspberry PI case (can be printed from files using a 3D- printer) 
+    • Raspberry PI zero 2 W (with male headers 2,54 mm for RTC-board, soldered to pin 1-10)
     • RTC (Real Time Clock), DS1307
     • Lithium battery, CR1220 3V 
     • MicroSD 64 gb (min 32 gb)
@@ -75,18 +78,19 @@ Software:
     • Raspberry PI Debian 64 bit operating system
     • CUPS, Common UNIX Printing System (optional)
 
+See https://github.com/Offlinedevice for details and files to download. If you don't want to build it from scratch (as described below) then simply download the "image"- file (link found on Github- page) and burn it to a microSD-card. Done!
 
 Building a offline device from scratch 
------------------------------
+--------------------------------------
 Install a Legacy 64-bit Raspberry Pi OS (that works with Raspberry Pi 2 W) with desktop support on the microSD card. Set user and password to "user1".
 
 Set time zone during download process.
 
-Start the offline device and connect to the Internet through Wifi
+Start the offline device and connect to the Internet through Wifi.
 
 Set locale by opening settings and select "Localisation Options" -> "L1 Locale" (spacebar to select -> "sv_SE.UTF-8 UTF-8", for Swedish) and press enter.
 
-Change keyboard layout to Generic PC-105, Svenskt -> Svenskt (or other). This will work automatic if using a PI official keyboard and mouse.
+Change keyboard layout. This will work automatic if the PI official keyboard and mouse are used.
 
 Update the system.
 	sudo update 
@@ -110,10 +114,9 @@ Install the i2c tool (for hardware clock)
 Change system clock to run on added hardware clock
 	sudo apt-get remove --purge fake-hwclock
 	sudo update-rc.d -f fake-hwclock remove
-	#sudo systemctl disable fake-hwclock
 
 Remove conflicting information in library
-	sudo nano /lib/udev/hwclock-set and comment out these lines (with #-sign):
+	sudo nano /lib/udev/hwclock-set and comment out these lines (with #-sign as shown here):
 
 	#if [ -e /run/systemd/system ] ; then
 	# exit 0
@@ -129,9 +132,9 @@ Check that the hardware clock has been synced
 	sudo hwclock -r (if not synced RETRY command "sudo hwclock -w")
 
 Install drivers for Smart card reader, Omnikey 5022 (optional)
-	sudo apt install libccid #libpcsclite pcsc-tools opensc pywallet #libsystemd #libusb #libpcsc
+	sudo apt install libccid pcsc-tools opensc 
 
-Place a picture in folder /home/user1/venvpython named background.jpeg. This will be used for the GUI. Best resulution is 1920 x 1080 pixel. Also make sure the following pictures are in folder /home/user1/venvpython:
+Place the following pictures in folder /home/user1/venvpython/images. For those named background the best resulution is 1920 x 1080 pixel:
 	boltcardicon.JPG
 	boltcardbackground.JPG
 	Yubikey5CBackground.JPG
@@ -151,6 +154,10 @@ Place a picture in folder /home/user1/venvpython named background.jpeg. This wil
 	iconlocked.png
 	ID_map.png
 
+Place the following pictures in folder /home/user1/Documents.
+	Seed templates.pdf
+	Password template
+
 Create a virtual enviroment for python3:
 	sudo apt install python3-venv
 	python3 -m venv venvpython
@@ -165,6 +172,3 @@ Edit autostart in order to get the GUI app to start when powered-up
 Change the background (optional)
 Place the picture you like to have as background in folder /home/user1/Pictures
 	pcmanfm -w /home/user1/Pictures/<filenameofpicture>
-
-
-
