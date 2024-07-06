@@ -1,7 +1,7 @@
-﻿
-Yubikey 5C NFC
+
+Yubikey 5 NFC
 -----------------------------
-The Offline device can be used for accessing a Yubikey 5C NFC portable hardware key. To change its credentials and settings. But also to move the locally generated subkeys from the local keychain to the Yubikey. In that way the secret master key never needs to be exposed to insecure computers and smartphones etc (that can be infected with viruses or other harmful code). All cryptographic operations will made on the Yubikey (with a subkey).
+The Offline device can be used for accessing a Yubikey 5 NFC portable hardware key. To change its credentials and settings. But also to move the locally generated subkeys from the local keychain to the Yubikey. In that way the secret master key never needs to be exposed to insecure computers and smartphones etc (that can be infected with viruses or other harmful code). All cryptographic operations will made on the Yubikey (with a subkey).
 
 When subkeys has been moved to the Yubikey it can be used with email clients such as Thunderbird (for computers) and K-9 mail (for smartphones) to communicate privately and securely over the Internet. Move the public key from the local keychain and make sure everyone you want sending you secure emails have it (include it as an attachment in your emails and/or upload it to your webpage/public keyserver etc). If using encryption on a phone you will need a keychain manager-app such as "OpenKeychain". It can be found on the App/Play- store.
 
@@ -10,7 +10,7 @@ Some operating systems such as Windows, IoS, Android and Mac OS has built-in fun
 
 FIDO keys
 -----------------------------
-FIDO keys are public/private- key pairs located on a specific type of hardware device. The FIDO key is associated with a service online, such as a Microsoft account etc. The user tells the service provider that "this is my public key that I want to use during login". And sends over the public part of the key to the service provider. When the user later on wants to login sends a request for a new login session. The service provider uses the public key he/she got before and creates a unique "challange". The user opens the challange with his/her private key and sends back the answer and in that way shows that "it's really me" (a little simplified).
+FIDO keys are public/private- key pairs located on a specific type of hardware device. The FIDO key is associated with a service online, such as a Microsoft account etc. The user tells the service provider that "this is my public key that I want to use during login". And sends over the public part of the key to the service provider. When the user later on wants to login sends a request for a new login session. The service provider uses the public key he/she got before and creates a unique "challange". The user opens the challange with his/her private key and sends back the answer and in that way shows that "it's really me" (simplified).
 The benefits are that there is no password that can get stolen. The attacker needs to have the FIDO hardware device to gain access. This can be combined with a PIN-code that the user of the FIDO get's three attempts to enter before the key self-destructs (render itself useless).
 
 It is important that there is more than ONE FIDO key for a specific service in case the first key gets lost or breaks.
