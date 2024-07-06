@@ -1,10 +1,9 @@
-﻿
+
 Secure archive
 -----------------------------
-One of the functions of the offline device is be a secure storage of sensitive data. And to make/recover a backup to/from an USB-device. With the introduction of cryptocurrency such as Bitcoin this becomes a real concern. Now you can store your digital “money/wealth” at home, so to speak. But it’s not only about encrypting your files with Bitcoin wallet data and then trying to remember the password. You also need to make backup’s and secure that you have the possibility to access it in the future. That implies that you still will have the needed software and the needed hardware. What good is a CD if your don’t have a CD-player? That’s why the offline device uses the most wide spread encryption program in the world. And everything is fully open source and reviewed by experts everywhere (for decades). 
-The secure archive on the offline device is a compressed archive (file) that is encrypted with a local key. After compressing and encrypting the secret files and folders the program goes over the internal storage media and overwrites the unencrypted data with random data, seven times. This is done every time you press “Logout” button at the home-screen, or, when you press the “Close and exit” button at the bottom of the screen. 
-
-In the secure archive there are certain system files and folders that are NOT to be deleted, moved or changed as they are vital for the device to function. They are:
+One of the functions of the offline device is to secure the storage of sensitive data. And to make or recover a backup to or from a USB device. With the introduction of cryptocurrency such as Bitcoin, this becomes a real concern. Now you can store your digital money or wealth at home, so to speak. But it’s not only about encrypting your Bitcoin wallet data and then trying to remember the password. You also need to make backups and ensure that you have the possibility of accessing them in the future. That implies that you will still have the needed software and hardware. What good is a CD if you don’t have a CD player? That’s why the offline device uses the most widespread encryption program in the world, GnuPG. And everything is fully open source and reviewed by experts everywhere (and has been for many years). 
+The secure archive on the offline device is a compressed archive (file) that is encrypted with a local key. After compressing and encrypting the secret files and folders, the program goes over the internal storage media and overwrites the unencrypted data with random data, seven times. This is done every time you press the “Logout” button on the home screen or when you press the “Close and exit” button at the bottom of the screen. 
+In the secure archive, there are certain system files and folders that are not to be deleted, moved, or changed, as they are vital for the device to function. They are:
 * home/user1/secure/keys
 * home/user1/secure/wallets
 * home/user1/secure/boltcards
@@ -19,36 +18,29 @@ In the secure archive there are certain system files and folders that are NOT to
 * home/user1/secure/FIDO/FIDOKeys.csv
 * home/user1/secure/ID/IDs.csv
 
-Also the private key(s) located on the /home/user1/ directory is not to be deleted or changed. As they are vital to get a new offline device up and running, in case of malfunction of the existing one.
- 
-Accessing the secure archive is not dependent on having an offline device. As long as you have the private key and the encrypted file of the secure archive you can decrypt it using almost any computer. BTC wallets, Bolt card data are stored in common .csv files after decryption. 
-
-The secure archive can be used for important private files but it's not suitable for very large amuont of data such as high definition pictures and videos. As the computing power of the device sets limits on how fast encryption and decryption can be done.
-
+Also, the private key(s) located in the /home/user1/ directory are not to be deleted or changed. It is vital to restore an offline device using one of your backup files in case of a loss or malfunction of the existing one.
+ 
+Accessing the secure archive is not dependent on having an offline device. As long as you have the private key and the encrypted file of the secure archive, you can decrypt it using almost any computer. BTC wallets and Bolt card data are stored in common csv- files after decryption. 
+The secure archive can be used for important private files, but it's not suitable for very large amounts of data, such as high-definition pictures or videos. As the computing power of the device has a limit on how fast encryption and decryption can be done.
 
 Passwords
 -------------------------------
-There is a system file on the Offline device called "passwords.txt". In that file things like account login details and passwords can be stored. It is displayed for viewing when clicking on the "Secure archive"- button on the main menu. The file is encrypted together with the rest of the content when user logs out or shuts down.
-
+There is a system file on the offline device called "passwords.txt." In that file, things like account login details and passwords can be stored. It is displayed when clicking on the "Secure archive” button on the main menu. The file is encrypted together with the rest of the content when the user logs out or shuts down. There is also a button ”Edit” for opening the file to edit. 
 
 Wallets
 -------------------------------
-There is a seperate system file for crypto wallets on the Offline device called "wallets.txt". Here the user can type in wallet details such as seed words, LNURLs, logins and/or wallet passwords etc. It is displayed for viewing when clicking on the "Secure archive"- button on the main menu. The file is encrypted together with the rest of the content when user logs out or shuts down.
-
+There is a separate system file for crypto wallets on the offline device called "wallets.txt." Here, the user can type in wallet details such as seed words, LNURLs, login credentials and/or wallet passwords, etc. It is displayed when clicking on the "Secure archive” button on the main menu. The file is encrypted together with the rest of the content when the user logs out or shuts down. There is also a button ”Edit” for opening the file to edit. 
 
 Storing BTC wallets (addresses)
 -------------------------------
-The offline can generate and store Bitcoin wallets located under the "Secure archive"-menu. The wallets are categorized into four catagories, Created, active, non KYC and Spent. Bitcoin is transferred to the wallet via a "Load" QR-code and moved out from the wallet/address using a WIF QR-code. WIF stands for "Wallet Import Format" and is an address style that is used exporting and importing private keys between Bitcoin wallets.
-To add BTC to the wallet scan the "Load"- QR code, with an online device, and transfer funds to the new address. This is then recorded on the Bitcoin blockchain. To be help with keeping track of what wallets on the offline device that are activly in use and what amount are on them it is then a good practice to add the amount manually to the wallet in the offline device. This is preferably done exactly after the transaction has been confirmed on the Bitcoin blockchain.
-To move the BTC out from th wallet simply scan the WIF address of the wallet with an online wallet that support WIF (such as Blue wallet or Coinomi wallet etc). After the funds has been scanned using the WIF-address it's a good idea to change the status from "Active" or "Non KYC" to "Spent". And never reuse/load that address again.  
-
+The offline can generate and store Bitcoin wallets located under the "Secure Archive" menu. The wallets are categorized into four categories: Created, Active, non-KYC, and Spent. Bitcoin is transferred to the wallet via a "Load" QR-code and are exported from the wallet address using a WIF QR-code. ”WIF” stands for "Wallet Import Format" and is an address style that is used for exporting and importing private keys between Bitcoin wallets.
+To add BTC to the wallet, scan the "Load QR code” with an Internet connected device and transfer funds to the address. This is then recorded on the Bitcoin blockchain. To help with keeping track of what wallets on the offline device are currently in use and what amounts are stored on them, it is a good practice to add the amount manually to the offline device. This is preferably done after the transaction has been confirmed on the Bitcoin blockchain.
+To move the BTC out of the wallet, simply scan the WIF address of the wallet with an online wallet that supports WIF (such as BlueWallet or CoinomiWallet, etc.). After the funds have been scanned using the WIF address, it's a good idea to change the status from "active" or "non-KYC" to "spent.". And never reuse or load that address again. 
 
 Encrypting and decrypting messages
 ----------------------------------
-To encrypt a new message using a public key that has been imported to the offline device select "Encrypt/view a text" in the "Secure archive"-menu (if you are logged in). Type the message into the textbox and then select what private key to use for signing the message with. Then select the public key to encrypt it to. The reason to "sign" a message is so that the receiver can check that it has come from the correct sender (as they have exchanged public keys previously and that key is used for checking the signature).
-To pre-load a text into the textbox simply click "Load from USB-file" or "Load from Secure archive" and select the file with the text that you intend to send/modify and then encrypt to a receiver.
-
-To decrypt a file/message select "Decrypt a message" and select the file with the encrypted message/text (if you are logged in). It will try to decrypt the file using the private keys on the local keychain. It will also check any signature of the encrypted file against all public keys that are on the local keychain. If a signature match any of the public key on the offline device (and it is "trusted") there will be a text displaying the Key ID used for signing and that "Signature is good" (in green text).
-There is an option to save the decrypted content to a text file in the secure archive in the offline device or to a USB-device. Or you can modify the message and encrypt/sign it again. 
-
-Public keys are exchanged when two people meet or in some other secure way.
+To encrypt a new message using a public key that is on the offline device, select "Encrypt/view a text" in the "Secure archive" menu (if you are logged in). Type the message into the textbox, and then select what private key to use for signing the message with. Then select the public key to encrypt it to. The reason to "sign" a message is so that the receiver can check that it has come from the correct sender (as they have exchanged public keys previously* and that key is used for checking the signature).
+To load text into the textbox, simply click "Load from USB-file" or "Load from Secure Archive" and select the text file that you intend to encrypt and sign for a specific receiver.
+To decrypt a file or message, select "Decrypt a message" and select the file with the encrypted message or text (if you are logged in). It will try to decrypt the file using the private keys on the local keychain. It will also check the signature of the encrypted file against all public keys that are on the local keychain. If a signature matches any of the public keys on the offline device (and it is "trusted"), there will be text displaying the key ID used for signing and that "Signature is good" (in green text).
+There is an option to save the decrypted content to a text file in the secure archive on the offline device or to a USB device. Or you can modify the message and encrypt/sign it again. 
+* Public keys are exchanged when two people meet in person or in some other secure way.
