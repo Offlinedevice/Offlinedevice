@@ -53,7 +53,7 @@ Build the Offline device using common parts. See "Getting started guide".
 Print the plastic parts you need. See folder "3D".
 
 ### Download and burn image
-Download [the image](https://www.mediafire.com/file/574iz7150bn8rz9/offline_device_0_2_5.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher or Raspberry Pi Imager:
+Download [the image](https://www.mediafire.com/file/bctbz7yfcd9q6fu/offline_device_0_2_6.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start:
 
 <p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/balenaEtcher_screenshot.PNG"></p>
 
