@@ -1,4 +1,4 @@
-
+﻿
 Bolt cards
 -----------------------------
 Bolt cards are physical cards of anything that can have a NTAG (microchip and antenna) inside it. A Bolt card is linked to a custodial wallet online. They are programmed with apps found on the app stores and using a common smartphone (with NFC*). The main benefit of using a Bolt card is that it can be used anonymously, as it doesn’t have any MAC-address, GPS or IP-address etc. And it doesn’t require any Internet connection, battery or phone (with a sim-card). But for it to be really anonymous, you need to create an account for the custodial wallet on a public computer (or using a TOR- browser). And program it using an offline NFC-capable device/phone. 
@@ -36,13 +36,13 @@ Make sure to only use an anonomous smartphone connected to a public wifi when pr
 
 Load the Bolt card with BTC.
 -----------------------------
-Sending Bitcoin to your Bolt card should always be done using a Tor browser or a public computer (tha has no link to your identity).
+Sending Bitcoin to your Bolt card should always be done using a Tor browser or a public computer (that has no link to your personal identity).
 * Open a browser and go the webpage ff.io or boltz.exchange/swap. Use liquid Bitcon (l-BTC) to save on fees.
 * Scan or copy the “Load”-QR code from the offline device and paste it into the “Destination”- field.
 * Enter the amount that you want to load the Bolt card with and press “Exchange now”.
 * Take your Bitcoin/Liquid wallet and scan the QR and send the requested funds and start the swap/transfer.
 
-To load the Bolt card from an offline wallet you simple need to scan the “WIF”-address (spend address) with Blue wallet or similar and then use that wallet to send funds to the exchange.
+To load the Bolt card from an offline wallet address you simply need to scan the “WIF”-address (spend address) with your phone (Blue wallet or similar) and then use that wallet to send funds to the exchange.
 
 
 Reset the Bolt card 
