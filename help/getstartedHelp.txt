@@ -1,4 +1,4 @@
-
+﻿
 Intro
 -----------------------------
 The Offline device is a tool for generating and managing encryption keys, setting up a Yubikey 5 NFC (hardware device) and storing files and folders securely using encryption. It is built using standard components and the plastic casing can be printed with a common 3D-printer. The offline device must never be connected to the Internet. All transfers of data to and from the device are done using USB-sticks or scanning QR-codes on the screen. The offline device can: 
@@ -42,13 +42,13 @@ Then it's better to give the encrypted data to one person and the secret passwor
 
 Getting started
 -----------------------------
-Use a cord to connect the keyboard and mouse. If using a Raspberry PI keyboard and mouse the key layout and language will automatically be configured. The screen connects using a mini-HDMI connector. The screen resolution should be minimum 1080p (HD). The power supply should be rated minimum 2 A output. The power supply connects to the micro USB- connector furthest from the mini HDMI- connector.
+First connect the screen using a mini-HDMI connector. The screen resulution should be minimum 1080p (HD). Use a cord to connect the keyboard and mouse. If using a Raspberry PI keyboard and mouse the key layout and language will automatically be configured. Then connect the power cord. The power supply shall be minimum 2 A rated output. It is a good idea to use a cord with a in-line switch when connecting the power supply. 
 The offline device has a built-in hardware clock (with battery). This allows it to keep the date and time, even if it's not connected to a power supply for long periods. But it is necessary to first set the time and date. Go to the settings page by clicking on the "Settings"- button at the top left corner. Under settings it is also possible to set the thee and colors (if logged in to an account).
-On the main page there is a button called "Create new account". This will give two options. First option is to create an account with one additional key for external communication (first key is for encrypting/decrypting the offline device itself). If selecting this option you will be guided to set-up what is needed for starting to use the offline device including configuring and loading a Yubikey 5C with subkeys (if you have a Yubikey). 
+On the main page there is a button called "Start". This will give two options. First option is to create an account with one additional key for external communication (first key is for encrypting/decrypting the offline device itself). If selecting this option you will be guided to set-up what is needed for starting to use the offline device including configuring and loading a Yubikey 5 with subkeys (if you have a Yubikey). 
 
-The automatically generated subkeys (encrypt, sign and authenticate) are time limited (select 1 or 3 years). These you can move out from the offline device to your computers and smartphones etc. The public key you give to anyone and everyone. A backup will also be generated that is to be moved to a separate USB-device (redundancy in case of damage, fire or theft etc). So make sure you have a USB stick ready!
+The automatically generated subkeys (encrypt, sign and authenticate) are time limited (select 1 or 3 years). These you can move out from the offline device to be used with your computers and smartphones etc. The public key you can give to anyone and everyone. A backup will also be generated that is to be moved to a separate USB-device (redundancy in case of damage, fire or theft etc). So make sure you have a USB stick ready!
 
-The second option for creating an account is limited to just creating a key for the offline device (maybe you already have a key that you use for emails etc. Or, you like to generate it some other time or way).
+The second option for creating an account is limited to just creating a key for encrypting the offline device itself (maybe you already have a key that you use for emails etc. Or, you like to generate it some other time or way).
 
 
 Using the offline device
@@ -165,3 +165,5 @@ nano /home/pi/.config/lxsession/LXDE-pi/autostart and add line @lxterminal -e /h
 Change the background (optional)
 Place the picture you like to have as background in folder /home/user1/Pictures
 pcmanfm -w /home/user1/Pictures/<filenameofpicture>
+
+
