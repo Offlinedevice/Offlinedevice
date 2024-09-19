@@ -25,6 +25,8 @@ Read more in the [getting started paper](https://github.com/Offlinedevice/projec
 - [x] Encrypted password storage
 - [x] Encrypted bitcoin wallet storage (seed's words, LNURLs etc) 
 - [x] Generate and manage your own digital ID's
+- [x] Generate your own Nostr Keys (NEW from GUIApp version 0.2.8!)
+- [x] Transfer a Nostr private Key to a Nostr Signing Device (NEW from GUIApp version 0.2.8!)
 - [x] Export IDs as image or as file (for upload to the "web-of-trust")
 - [x] Validate others digital ID's (standard (RFC4880)
 - [x] Store Bolt cards data for accessing load links (lighning Bitcoin), programming and resetting cards
@@ -53,7 +55,9 @@ Build the Offline device using common parts. See "Getting started guide".
 Print the plastic parts you need. See folder "3D".
 
 ### Download and burn image
-Download [the image](https://www.mediafire.com/file/bctbz7yfcd9q6fu/offline_device_0_2_6.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start:
+Download [the image](https://www.mediafire.com/file/hz4bb3kw2phr0v1/offline_device_0_2_8.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start.
+
+To run the Offline device with GUIApp version 0.2.8, and later, it's necessary to first burn the relevant/latest Image to the microSD-card (see above):
 
 <p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/balenaEtcher_screenshot.PNG"></p>
 
