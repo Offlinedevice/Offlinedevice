@@ -88,16 +88,16 @@ Set locale by opening settings and selecting "Localisation Options" -> "L1 Local
 
 Change keyboard layout to Generic PC-105, Svenskt -> Svenskt (or other). This will work automatically if you use a PI official keyboard and mouse.
 
-Update the system.
+Update the system
 sudo update 
 
-Overclock the device (optional)
+Overclock the device (optional):
 sudo nano /boot/config.txt. Change the line in the file to "arm_freq=1200" and add at the bottom of the file "over_voltage=2". Save and exit.
 
-Restart the device.
+Restart the device
 sudo reboot
 
-Enable, install and check the RTC (Real Time Clock a with battery needs to be mounted to the Raspberry Pi)
+Enable, install and check the RTC (Real Time Clock a with battery needs to be mounted to the Raspberry Pi):
 sudo nano /boot/config.txt
 
 Un-comment (removing the "#"-sign) and change/add
@@ -120,49 +120,36 @@ sudo nano /lib/udev/hwclock-set and comment out these lines (with #-sign):
 #fi
 #/sbin/hwclock --rtc=$dev --systz
 
-Reboot the device.
+Reboot the device
 sudo reboot
 
-Sync the RTC with PI
+Sync the RTC with PI:
 sudo hwclock -w
 Check that the hardware clock has been synced
 sudo hwclock -r (if not synced RETRY command "sudo hwclock -w")
 
-Install drivers for Smart card reader, Omnikey 5022 (optional)
+Install drivers for Smart card reader, Omnikey 5022 (optional).
+Install libs:
 sudo apt install libccid #libpcsclite pcsc-tools opensc #libsystemd #libusb #libpcsc
-
-Place a picture in folder /home/user1/venvpython named background.jpeg. This will be used for the GUI. Best resulution is 1920 x 1080 pixel. Also make sure the following pictures are in folder /home/user1/venvpython:
-boltcardicon.JPG
-boltcardbackground.JPG
-Yubikey5CBackground.JPG
-GnuPGbackground.JPG
-blue.jpg
-bluewaves.jpg
-bluebackground.jpg
-darkbackgroundmid.jpg
-darkbackground.jpg
-winterbackground.jpg
-winterbackgroundmid.jpg
-summerbackground.jpg
-sumerbackgroundmid.jpg
-lightbackground.jpg
-lightbackgroundmid.jpg
-iconopen.png
-iconlocked.png
-ID_map.png
 
 Create a virtual environment for python3:
 sudo apt install python3-venv
 python3 -m venv venvpython
 source venvpython/bin/activate
-pip install customtkinter gnupg python-yubico libusb pyusb pillow pyscreenshot pywallet
 
-Copy the file GUIApp.py to the folder /home/user1/venvpython
+Add files:
+Copy the files in folder github.com/Offlinedevice/Offlinedevice/images to /home/user1/venvpython/images.
+Copy the files in folder github.com/Offlinedevice/Offlinedevice/documents to /home/user1/Documents.
+Copy the files in folder github.com/Offlinedevice/Offlinedevice/help to /home/user1/venvpython/help.
+Copy the file github.com/Offlinedevice/Offlinedevice/code/GUIApp.py to the folder /home/user1/venvpython
 
-Edit autostart in order to get the GUI app to start when powered up.
+Install libs:
+pip install customtkinter gnupg python-yubico libusb pyusb pillow pyscreenshot pywallet nostr
+
+Edit autostart in order to get the GUI app to start when powered up:
 nano /home/pi/.config/lxsession/LXDE-pi/autostart and add line @lxterminal -e /home/user1/venvpython/python GUIApp.py
 
-Change the background (optional)
+Change the background (optional):
 Place the picture you like to have as background in folder /home/user1/Pictures
 pcmanfm -w /home/user1/Pictures/<filenameofpicture>
 
