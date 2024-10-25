@@ -8,7 +8,7 @@ Offline device is a hardware device that runs on a Raspberry OS (Linux based) op
 
 The Graphical User Interface is written in Python 3 (GUIApp.py).
 
-Read more in the [getting started paper](https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/help/getstartedHelp.txt).
+Read more in the [getting started paper](https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/help/getstartedHelp.txt). Follow on Nostr: primal.net/p/npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3chs
 
 ## Features
 
