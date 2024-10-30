@@ -18,8 +18,8 @@ Read more in the [getting started paper](https://github.com/Offlinedevice/projec
 - [x] Fully open source (APGLv2)
 - [x] Manage your Yubikey 5C, including loading subkeys
 - [x] Secure archive of files that can be encrypted and backed-up
-- [x] Encrypt and sign messages 
-- [x] Decrypt messages and check its signature
+- [x] Encrypt and sign files or messages 
+- [x] Decrypt files or messages and check its signature
 - [x] Backup and restore function including complete system cloning
 - [x] Generate Bitcoin keys offline and store/access through graphical interface
 - [x] Encrypted password storage
