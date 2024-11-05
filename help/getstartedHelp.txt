@@ -139,6 +139,7 @@ source venvpython/bin/activate
 
 Add files:
 Copy the files in folder github.com/Offlinedevice/Offlinedevice/images to /home/user1/venvpython/images.
+Copy the files in folder github.com/Offlinedevice/Offlinedevice/Pictures to /home/user1/Pictures.
 Copy the files in folder github.com/Offlinedevice/Offlinedevice/documents to /home/user1/Documents.
 Copy the files in folder github.com/Offlinedevice/Offlinedevice/help to /home/user1/venvpython/help.
 Copy the file github.com/Offlinedevice/Offlinedevice/code/GUIApp.py to the folder /home/user1/venvpython
