@@ -55,9 +55,9 @@ Build the Offline device using common parts. See "Getting started guide".
 Print the plastic parts you need. See folder "3D".
 
 ### Download and burn image
-Download [the latest image](https://www.mediafire.com/file/6uxg6xyq2a5virf/offline_device_v0_3_1.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start.
+Download [the latest image](https://www.mediafire.com/file/csaxqyn4unkp0lm/offline_device_0_3_1.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start.
 
-To check the signature of the latest image use [the signature file](https://www.mediafire.com/file/otau8ghdc27z3r2/Offline_device_v0_3_1.img.gz.sig/file). First make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
+To check the signature of the latest image use [the signature file](https://www.mediafire.com/file/uaadfnm0q6orub1/offline_device_0_3_1.img.gz.sig/file). First make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
 To run the Offline device with GUIApp version 0.3.1, and later, it's necessary to first burn the relevant/latest Image to the microSD-card (see above):
 
