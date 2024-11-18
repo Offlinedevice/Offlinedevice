@@ -1,15 +1,18 @@
-
+﻿
 Secure archive
 -----------------------------
 One of the functions of the offline device is to secure the storage of sensitive data. And to make or recover a backup to or from a USB device. With the introduction of cryptocurrency such as Bitcoin, this becomes a real concern. Now you can store your digital money or wealth at home, so to speak. But it’s not only about encrypting your Bitcoin wallet data and then trying to remember the password. You also need to make backups and ensure that you have the possibility of accessing them in the future. That implies that you will still have the needed software and hardware. What good is a CD if you don’t have a CD player? That’s why the offline device uses the most widespread encryption program in the world, GnuPG. And everything is fully open source and reviewed by experts everywhere (and has been for many years). 
 The secure archive on the offline device is a compressed archive (file) that is encrypted with a local key. After compressing and encrypting the secret files and folders, the program goes over the internal storage media and overwrites the unencrypted data with random data, seven times. This is done every time you press the “Logout” button on the home screen or when you press the “Close and exit” button at the bottom of the screen. 
-In the secure archive, there are certain system files and folders that are not to be deleted, moved, or changed, as they are vital for the device to function. They are:
+In the secure archive, there are certain system files and folders that are not to be deleted, moved, or changed, as they are vital for the device to function. 
+System files:
 * home/user1/secure/keys
 * home/user1/secure/wallets
 * home/user1/secure/boltcards
 * home/user1/secure/FIDO
 * home/user1/secure/ID
 * home/user1/secure/settings.csv
+* home/user1/secure/Alias.csv
+* home/user1/secure/externalAliases_localcopy.csv
 * home/user1/secure/passwords.txt
 * home/user1/secure/wallets/paperwallets
 * home/user1/secure/wallets/wallets.txt
@@ -17,6 +20,7 @@ In the secure archive, there are certain system files and folders that are not t
 * home/user1/secure/boltcards/boltcards.csv
 * home/user1/secure/FIDO/FIDOKeys.csv
 * home/user1/secure/ID/IDs.csv
+* home/user1/Documents/externalAliases.csv
 
 Also, the private key(s) located in the /home/user1/ directory are not to be deleted or changed. It is vital to restore an offline device using one of your backup files in case of a loss or malfunction of the existing one.
  

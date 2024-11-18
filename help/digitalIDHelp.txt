@@ -1,5 +1,5 @@
-
-Digital ID
+﻿
+Digital ID (and Nostr)
 -----------------------------
 In the digital age, your digital ID is everything. You don't allow the government to install codelocks on all your doors and then receive an electronic key that only works when they allow it. Similarly, a digital ID can be used for surveillance and control. Maybe it was the party that you voted for that won the election last time, and you like the controls, rules and restrictions. But maybe they lose the next election?
 Mass surveillance combined with centralized control over people's IDs and money transactions creates a honeypot for sociopaths and criminals. People and groups that want to control and have power over others will do and say anything to get to be that politician, banker, etc. History has proven this.  
@@ -54,4 +54,29 @@ Updating your public key on a public keychain (after adding validating signature
 2. Move the USB to an online computer.
 3. Go to https://keys.openpgp.org/upload (or the keyserver you use) and upload the updated public key. Alternatively, first import the key to the online computer's local keychain (gpg --import <key ID>) and then use the command: 
 "gpg --keyserver <key-server> --send-keys <key-id or fingerprint>".
+
+Nostr
+-----------------------------
+Nostr is an open source, decentralized and permissionless social platform (like Twitter but without the company Twitter..). It operates on the principal of two keys. One public (for accessing the accounts data) and one for signing "events" such as a new post/message.
+The Offline device has added functionality for creating, storing and export/importing such keys. It also has an interface to transfer the private key to a Nostr Signing device (NSD). 
+
+Creating new keys
+-----------------------------
+Under the "Digital ID" menu, open up the sub menu "Nostr". When there is an empty slot for a Nostr key, click on "New"- button. This will generate a random public key and one associated private key. Don't forget to backup the device after a new key has been stored.
+
+Importing existing keys
+-----------------------------
+When there is an empty slot for a Nostr key, click on "Import"- button. This will open up a dialog with instructions on how to copy a file from an USB-device to the Offline device. The file on the USB must be a text file (.txt) containing exactly two lines.
+First line is the public key (called "Npub"). The second line in the file is the private key (called "Nsec"). Make sure there is no "new line" after the second line.
+
+Exporting keys
+-----------------------------
+Exporting the keys from the Offline device can be done in two ways. 
+1. When there is a Nostr key available, click on the "QR"- button. This will open up a screen with a QR- code of the key. Scan it with a camera to transfer it to a computer and/or smartphone.
+2. When there is a Nostr key available, click on the "Export"- button next to a public key or private key. This will open a dialog box with instructions on how to copy the key to an USB-device. The text file that will e written to the USB-device will have one lines (the Npub or Nsec).   
+
+Transfer a private key to NSD
+-----------------------------
+When there is a Nostr key available, click on the "NSD"- button. This will open up a new window that have a guide on how to copy the selected private key to a Nostr Signing Device (NSD, a hardware device). The signing device work with Chrome browser.
+Before starting to use the NSD it's first needed to install an extension to the Chrome browser. See instructions under Nostr- menu.
 

@@ -1,4 +1,4 @@
-
+﻿
 Yubikey 5 NFC
 -----------------------------
 The Offline device can be used for accessing a Yubikey 5 NFC portable hardware key. To change its credentials and settings. But also to move the locally generated subkeys from the local keychain to the Yubikey. In that way the secret master key never needs to be exposed to insecure computers and smartphones etc (that can be infected with viruses or other harmful code). All cryptographic operations will made on the Yubikey (with a subkey).
