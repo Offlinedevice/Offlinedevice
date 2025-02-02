@@ -1,5 +1,5 @@
 ﻿
-Intro
+Intro 
 -----------------------------
 The Offline device is a tool for generating and managing encryption keys, setting up a Yubikey 5 NFC (hardware device) and storing files and folders securely using encryption. It is built using standard components and the plastic casing can be printed with a common 3D-printer. The offline device must never be connected to the Internet. All transfers of data to and from the device are done using USB-sticks or scanning QR-codes on the screen. The offline device can: 
 * Generate and use encryption keys (encryption/decryption, authentication, signing of keys and documents, etc).
@@ -18,48 +18,45 @@ The Offline device is a tool for generating and managing encryption keys, settin
 
 General use:
 
-1. Create an account on the device and generate one or more external encryption key(s). Or import our existing keys to the Offline Device.
-Tip: Choose a strong password. Especially for a key used with Yubikey as there is no need to remember/use it. The Yubikey uses only a PIN to perform cryptographic operations (three failed attempts locks the Yubikey).
+1. Create an account on the device and generate one or more external encryption key(s). Or import your existing keys to the Offline Device.
+Tip: Choose strong passwords. Especially for keys used with Yubikey as there is no need to remember/use them. The Yubikey uses only a PIN to perform cryptographic operations (three failed attempts locks the Yubikey).
 
-2. Store bitcoin wallets, data, Bolt card and passwords etc in the secure archive.
+2. Store bitcoin wallets, sensitive data, Bolt cards and passwords etc in the secure archive.
 
-3. Make one or more backups on USB-sticks (this include backup for the secret keys).
-Tip: Store the USB- backups on multiple physical locations for safety. Don't store both the backup and the secret password with the same person. That would make the other person responsible for safety in a way that he/she is probably not able to handle.
+3. Make one or more backups on USB-sticks (this includes making a backup for the secret key to decrypt the Offline device itself).
+Tip: Store the USB- backups on multiple physical locations for safety. Don't store both the backupand, encryption key and the secret password with the same person. That would make that person responsible for safe keeping in a way that he/she is probably not able to handle.
 
 4. Export public keys and secret subkeys to files and transfer them to online computers and/or smartphones (for encrypting emails etc).
 
-5. Make regular backups whenever important data is added or modified. Or if a new secret encryption key is created.
+5. Make a backup whenever important data is added or modified. Or if a new secret encryption key is created.
 
 Never leave the room while logged in to your account. Stealing information is done in a split second and it's more or less impossible to prove who did it.
 
 
 Data security 
 -----------------------------
-Keeping data and bitcoin in self-custody is a much more secure and robust way than centralizing and trusting a central authority. It's like having a ton of gold but you can only access it if somebody else unlocks the vault door. Is that gold really yours then!?!
-Encryption is the most efficient and safe way of securing ones data. The important part is that it has to be YOU that generate the encryption keys. And that you do it in a secure way and private way (offline). 
+Keeping data, and bitcoin, in self-custody is a much more secure then trusting a central authority and hoping you can get to it when needed or in case of an emergency. It's like having a ton of gold but you can only access it if somebody else unlocks the vault door. Is that gold really yours then!?!
+Encryption is the most efficient and safe way of securing ones data. The important part is that it has to be YOU that generate the encryption keys. And that you do it in a secure and private way (offline). 
 Encryption keys that can be generated with the offline device include FIDO2 passwordsless authentication keys, bitcoin wallets addresses, SSH-communication keys, encryption/decryption keys and signing keys. These keys uses encryption that can't be broken no matter how much resources the attacker has.
-For the average individual the threat of data being stolen comes from an online attacker. So keeping the encryption keys and the secret data offline is very important. But when making backups and giving them to a friend, company and/or relative you don't want to but the burden and responsibility on them to keep it safe.
-Then it's better to give the encrypted data to one person and the secret password to somebody else. That way the risks are reduced.
-
+For the average individual the threat of data being stolen comes from an online attacker. So keeping the encryption (master) keys offline is very important. You can make a backup and give it to a friend or relative for safe keeping, BUT don't give the same person the secret password. That you give to somebody else for safe keeping. That way the risks are reduced.
+If the Offline device (the hardware) can be manipulated (without you knowing a spyware or keylogger etc could be installed) so, it's best to store the device locked in a safe and/or hide it.
 
 Get started
 -----------------------------
-First connect a screen using a mini-HDMI connector. The screen resolution should be minimum 1920 x 1080 (HD). Use a cord to connect a keyboard and mouse. If using a Raspberry PI keyboard and mouse the key layout and language will automatically be configured. Then connect the power cord. The power supply shall be minimum 2 A rated output. It is a good idea to use a cord with a in-line switch when connecting the power supply. 
-The offline device has a built-in hardware clock (with battery). This allows it to keep the date and time, even if it's not connected to a power supply for long periods. But it is necessary to first set the time and date. Go to the settings page by clicking on the "Settings"- button at the top left corner. Under settings it is also possible to set the thee and colors (if logged in to an account).
-On the main page there is a button called "Start". This will give two options. First option is to create an account with one additional key for external communication (first key is for encrypting/decrypting the offline device itself). Selecting this option will guide you to set-up what is needed for starting to use the offline device including configuring and loading a Yubikey 5 with subkeys (if you have one). 
+First connect a screen using a mini-HDMI connector. The screen resolution should be minimum 1920 x 1080 (HD). Secondly connect a keyboard and mouse. If using a Raspberry PI keyboard and mouse the key layout and language will automatically be configured. And after the screen and keybord are connected finally connect the power cord (its the micro-USB connector at far end. The power supply shall be rated at minimum 2 A output. It is a good idea to use a cord with an in-line switch when connecting the power supply. 
+The offline device has a built-in hardware clock (with battery). This allows it to keep the date and time, even if it's not connected to a power supply for long periods. But it is necessary to first set the time and date. Go to the settings page by clicking on the "Settings"- button at the top right corner. Under "Settings" it is also possible to set the background, button colors and avatar etc (if logged in to an account).
+On the main page there is a button called "Start". This will give two options. One option is to make a new acount and the other to make an account with an additional key for external communication (in addition to the key used for encrypting/decrypting the offline device itself). Selecting this option will let you configure and load subkeys to an Yubikey 5 (if you have one). 
 
-The automatically generated subkeys (encrypt, sign and authenticate) are time limited (select 1 or 3 years). These you can move out from the offline device to be used with your computers and smartphones etc. The public key you can give to anyone and everyone. A backup will also be generated that is to be moved to a separate USB-device (redundancy in case of damage, fire or theft etc). So make sure you have a USB stick ready!
-
-The second option for creating an account is limited to only creating a key for encrypting the offline device itself (maybe you already have a key that you use for emails etc. Or, you like to generate it some other time or way).
+The option for creating an account is limited to only creating a key for encrypting the offline device itself (maybe you already have a key that you use for emails etc. Or, you like to generate it some other time or way).
 
 
 Using the offline device
 -----------------------------
 When the setup process is complete and you have a user account you can start adding some files, passwords/wallets, Bolt cards or generate Bitcoin wallets etc. After you're done, simply hit “Close and exit” at the bottom of the screen. This will encrypt all the data before shutting down the device. After keys have been added/modified on the local keychain it's important to “Backup keys” from the GPG menu. It is important to regularly do a backup to one or more USB devices. This can be done with “Backup to USB/SD” under the secure archive menu. It is also possible to clone the entire offline device to an extra microSD-card under the same menu (but only when the secure archive is encrypted). There is a risk that the offline device will get tampered with if somebody gets physical access to it, so keep it hidden and locked away as much as possible. The secret passphrase should be written down at more than one location. Make sure that somebody you trust has knowledge of it in case something happens to you..
 Make sure to never leave the device on and unattended with the secure archive decrypted. 
-There can be many accounts on an offline device. When logging in, it depends on what key is used in order to access a user account. Always make one or more backups on separate USB devices. This can be done by clicking the button "Backup to USB/SD" under Secure archive menu while logged in to an account. Pressing the same button while not logged in will clone the existing microSD card on the device. This will require an extra microSD-card (min. 32 gb) and a USB-to-microSD adaptor.
+There can be many accounts on an offline device. When logging in select the correct key/avatar to access your user account. To clone the device you will need an extra microSD-card (min. 32 gb) and a USB-to-microSD adaptor.
 Under the Settings-menu it's possible to set the date and time and also to customize your account (theme, colors and user name).
-Keep the offline device hidden or locked away so that it can't be tampered with. The encrypted information on the device is "hacking proof" once the user logs out (and it's encrypted). Also, the extra backups on USB devices are safe (as the encryption can't be broken, if the password is strong enough..). But, there is a risk that the device, doing the decryption and encryption of the secret content, could get compromized with spyware etc. But then the attacker needs to have physical access to the device. 
+The encrypted information on the device is "hacker proof" once the a user logs out (and it's encrypted). Also, any backups are secure (as the encryption can't be broken, if the password is strong enough..). But make sure that the device itself can't be accessed by an attacker. 
 
 
 Specifications
@@ -165,6 +162,7 @@ BTC_icon_blue.jpg
 iconopen.png
 BTC_icon_green.jpg
 ID_map.png
+vectorIDart.jpg
 
 And in folder /home/user1/Pictures:
 AI_boy.png
