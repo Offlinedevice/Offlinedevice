@@ -50,10 +50,16 @@ Connect the Offline device with cables to a monitor, a keyboard and a mouse. It 
 
 ## Start here
 ### Build hardware
-Build the Offline device using common parts. See "Getting started guide".
+Build the Offline device using common parts. See [Getting started guide](https://github.com/Offlinedevice/Offlinedevice/blob/1e455aa9e6107977ea682fc7ba34ea53aa5cc08b/help/getstartedHelp.txt)
 
 ### 3D- print parts 
-Print the plastic parts you need. See folder "3D".
+Print the plastic parts you need.
+* [Base part](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/PIzeroBoxRoundedwithCamera.stl)
+* [Lid for build with camera model 1/2](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LidPIzeroBoxwithCameraModel_1_and_2.stl)
+* [Alt. lid for camera model 3 (12 MP and auto focus lens)](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LidPIzeroBoxwithCameraModel3.stl)
+* [LED guide](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LEDguide.stl)
+
+See also folder "3D" for other featured parts.
 
 ### Download and burn image
 Download [the latest image](https://www.mediafire.com/file/gcn3e4dc3v098oa/OfflineDevice_0_3_7_Pi2W.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start.
