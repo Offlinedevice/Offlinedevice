@@ -1,6 +1,6 @@
 
 # Offline device
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/433bfccae5fa8b798b9579da7bbd093f0e60bbeb/Offline_Device_login.png"></p>
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/bac3ae3b1d51cccb709c672649967c02344d325c/OfflineDevice3D.gif"></p>
 
 Offline device is a hardware device that runs on a Raspberry OS (Linux based) operating system. It can be built with standard components found in the Internet and all the plastic parts can be printed on a 3D-printer.
 
