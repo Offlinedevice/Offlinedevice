@@ -25,11 +25,13 @@ Using the different keys on the Offline Device own local keychain you can do dif
 * Checking signatures
 * Signing documents
 * Signing other peoples public keys (and then export it to a file and giving it to the owner of the key. In this way they can build trust for their key)
+* Timestamp signatures and files on the Bitcoin blockchain, using sha256sum(s), to generate an unique BTC address (bech32 encoded, script type p2wsh) that a transaction is sent to and thus recorded it on the blockchain).
 
 This way we can:
 * secure WHO the sender is;
 * secure that the information has not been modified;
-* privatize the information (only the owner of the private key can decrypt and see whats inside);
+* make sure that the information can only be access by the owner of the private key;
+* secure when the signature and file (or only file) was first timestamped (e.g that its the original file(s)   
 * build trust in keys by signing them (e.g Bob knows Alice that knows Frank. If Alice has sign Franks key, with her private key, Bob can know that messages signed with that particular key is probably legit and actually from Frank).
 
  
