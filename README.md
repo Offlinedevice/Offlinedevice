@@ -1,6 +1,6 @@
 
 # Offline device
-<p align="center"><img src="https://github.com/Offlinedevice/project/blob/d34ca6aa03fe1624e95431d6ab1dc0d65a6a4274/Offline_device_start.png"></p>
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/7a977ce4c080ca685e4d9f3b3a0b47ce3544cad8/Offline_device_screeshot.png"></p>
 
 Offline device is a hardware device that runs on a Raspberry OS (Linux based) operating system. It can be built with standard components found in the Internet and all the plastic parts can be printed on a 3D-printer.
 
@@ -20,8 +20,9 @@ Read more in the [getting started paper](https://github.com/Offlinedevice/projec
 - [x] Decrypt files or messages and check its signature
 - [x] Backup and restore function including complete system cloning
 - [x] Generate Bitcoin keys offline and store/access through graphical interface
-- [x] Add Bitcoin wallets created from Jade hardware wallet with Air-gapped function (NEW from version 0.3.6)
-- [x] Create new Bitcoin wallets on Offline device with Air-gapped function (NEW from version 0.3.6) 
+- [x] Add Bitcoin wallets created from Jade hardware wallet with Air-gapped function
+- [x] Create new Bitcoin wallets on Offline device with Air-gapped function 
+- [x] Sign Bitcoin transactions offline and Air-gapped (PSBT) (NEW from version 0.3.7)
 - [x] Encrypted password storage
 - [x] Encrypted bitcoin wallet storage (seed's words, LNURLs etc) 
 - [x] Generate and manage your own digital ID's
@@ -36,7 +37,7 @@ Read more in the [getting started paper](https://github.com/Offlinedevice/projec
 
 ## Using the Offine device
 
-Connect the Offline device with cables to a monitor, a keyboard and a mouse. It supports multiple account on the same device. Import or generate GPG keys without being connected to the Internet. During setup a backup USB- device is created. The Offline device facilitates complete privacy and unbreakable encryption for sensitive data and also provides a mechanism for securely send and receive data over the Internet. Others features include Bitcoin wallet generation/storage.
+Connect the Offline device with cables to a monitor, a keyboard and a mouse. It supports multiple account on the same device. Import or generate GPG keys without being connected to the Internet. During setup a backup USB- device is created. The Offline device facilitates complete privacy and unbreakable encryption for sensitive data and also provides a mechanism for securely send and receive data over the Internet. Others features include Bitcoin wallet generation/storage and transaction signing.
 
 ### Guides
 
@@ -55,11 +56,11 @@ Build the Offline device using common parts. See "Getting started guide".
 Print the plastic parts you need. See folder "3D".
 
 ### Download and burn image
-Download [the latest image](https://www.mediafire.com/file/jb0xaxmhw9u3443/offline_device_v0_3_6.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start.
+Download [the latest image](https://www.mediafire.com/file/gcn3e4dc3v098oa/OfflineDevice_0_3_7_Pi2W.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start.
 
-To check the signature of the latest image use [the signature file](https://www.mediafire.com/file/whd8e3pxkgcmxan/offline_device_v0_3_6.img.gz.sig/file). First make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
+To check the signature of the latest image use [the signature file](https://www.mediafire.com/file/crmvxytwowcldr9/OfflineDevice_0_3_7_Pi2W.img.gz.sig/file). First make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
-To run the Offline device with GUIApp version 0.3.6, and later, it's necessary to first burn the relevant/latest Image to the microSD-card (see above):
+To run the Offline device with GUIApp version 0.3.7, and later, it's necessary to first burn the relevant/latest Image to the microSD-card (see above):
 
 <p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/balenaEtcher_screenshot.PNG"></p>
 
@@ -78,7 +79,7 @@ Multiple people can share the same device.
 ## Personalized settings
 Change look and feel of your account. 
 
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/24983000ea314ff8c1ae10c5c0f86ceefee5acb8/My_Settings.JPG"></p>
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/7a977ce4c080ca685e4d9f3b3a0b47ce3544cad8/Settings_screenshot.png"></p>
 
 ## Manage encryption keys
 Manage the encryption keys on the local keychain. 
@@ -88,7 +89,7 @@ Manage the encryption keys on the local keychain.
 ## Add and create Bitcoin wallets
 A wallet can be generated by a trusted hardware wallet such as Blockstream Jade and then inported to get air-gapped functionality while the keys are encrypted on the Offline device. 
 
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/24983000ea314ff8c1ae10c5c0f86ceefee5acb8/Air_gapped_wallet1.JPG"></p>
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/7a977ce4c080ca685e4d9f3b3a0b47ce3544cad8/Bitcoin_wallet_screenshot.png"></p>
 
 ## Digital IDs
 Controlling your own digital ID is as important as controlling your own digital money. The Offline device gives an easy way to create IDs and encrypted files that can be uploaded to public keyservers around the word. Including picture ID/key. 
