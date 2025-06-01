@@ -1,0 +1,37 @@
+﻿
+GPG 
+-----------------------------
+GPG stands for Gnu Privacy Guard and is an open source encryption software provided with almost all personal computers today (see https:\\gnupg.org). The offline device uses only asymetric encryption (called RSA) with a key length of 4096 bits. This is considered unbreakable encryption (with the technology we have today). Keys can do many things such as encrypting and decrypting emails, make signatures or create encrypted "tunnels" between computers over the open Internet. Keys can also be split into several parts. Each part will have a specific capability/function. One part of a key is called a “public key” and that is given to others so that they can encrypt a file, or message, that only the secret part of the key can read. But it also allows others to verify the signatures that you have made, saying that "this file is really from me". 
+The master key is generated offline and is always kept offline (on the offline device's local keychain). It is only used to generate subkeys. After generating a new private subkey there is a need to also generate a new public key and ask everyone to replace the old one that they are using. 
+After issuing a new key or subkey on the offline device it’s important to make a backup. This means that the key is exported from the local keychain and placed in the secure archive (on the offline device). So when a backup for the offline device is made, the secret keys will also be backed up. They can then be recovered by simply importing them to a new local keychain. 
+
+When creating a new key on the offline device that is intended to be used for external communication (such as email etc) and the check-box "Only certify" is checked. This will tell the offline device to generate one master key and three subkeys (validity 3 years). The subkeys can then be moved to a Yubikey, smartphone and/or computer. If you plan to move them to a Yubikey make sure they are backed up first, as the moving process is a destructive process and the key's needs to be recovered from backup if you plan to use them also on other devices (such as with an email client locally on your computer). 
+
+Only certain functions of GnuPG are incorporated into the offline device for ease of use and convenience.
+
+If the subkeys are about to expire you create a new set of subkeys. Old subkey's should not be deleted. 
+
+After creating or importing a key it is a good idea to go to menu GPG -> Check local keys and click on "add alias" next to the new key and give it a name. In this way it will be easier to remenmber who is owner of each key.
+
+It is most important that you receive others public keys in a trusted way. Such as directly from the person in real life.
+
+Encrypt/Sign/check
+-----------------------------
+Using the different keys on the Offline Device own local keychain you can do different things such as:
+
+* Encrypting documents
+* Encrypting and signing documents
+* Decrypting documents
+* Checking signatures
+* Signing documents
+* Signing other peoples public keys (and then export it to a file and giving it to the owner of the key. In this way they can build trust for their key)
+* Timestamp signatures and files on the Bitcoin blockchain, using sha256sum(s), to generate an unique BTC address (bech32 encoded, script type p2wsh) that a transaction is sent to and thus recorded it on the blockchain).
+
+This way we can:
+* secure WHO the sender is;
+* secure that the information has not been modified;
+* make sure that the information can only be access by the owner of the private key;
+* secure when the signature and file (or only file) was first timestamped (e.g that its the original file(s)   
+* build trust in keys by signing them (e.g Bob knows Alice that knows Frank. If Alice has sign Franks key, with her private key, Bob can know that messages signed with that particular key is probably legit and actually from Frank).
+
+ 
