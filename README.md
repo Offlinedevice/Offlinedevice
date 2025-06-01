@@ -41,7 +41,7 @@ Connect the Offline device with cables to a monitor, a keyboard and a mouse. It 
 
 ### Guides
 
-* [Getting started guide](https://github.com/Offlinedevice/Offlinedevice/blob/1e455aa9e6107977ea682fc7ba34ea53aa5cc08b/help/getstartedHelp.txt)
+* [Getting started guide](https://github.com/Offlinedevice/Offlinedevice/blob/057806e96a671aa06b3eac34bdbc17a77e54d67b/help/getstartedHelp.txt)
 * [GPG guide](https://github.com/Offlinedevice/Offlinedevice/blob/e34fb841eac5e7634a74db3f75f62b0f8ab91fca/help/gpgHelp.txt)
 * [Yubikey guide](https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/help/yubikeyHelp.txt)
 * [Secure archive guide](https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/help/securearchiveHelp.txt)
@@ -50,7 +50,7 @@ Connect the Offline device with cables to a monitor, a keyboard and a mouse. It 
 
 ## Start here
 ### Build hardware
-Build the Offline device using common parts. See [Getting started guide](https://github.com/Offlinedevice/Offlinedevice/blob/1e455aa9e6107977ea682fc7ba34ea53aa5cc08b/help/getstartedHelp.txt)
+Build the Offline device using common parts. See [Getting started guide](https://github.com/Offlinedevice/Offlinedevice/blob/057806e96a671aa06b3eac34bdbc17a77e54d67b/help/getstartedHelp.txt)
 
 ### 3D- print parts 
 Print the plastic parts you need.
