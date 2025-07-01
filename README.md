@@ -21,8 +21,10 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 - [x] Backup and restore function including complete system cloning
 - [x] Generate Bitcoin keys offline and store/access through graphical interface
 - [x] Add Bitcoin wallets created from Jade hardware wallet with Air-gapped function
-- [x] Create new Bitcoin wallets on Offline device with Air-gapped function 
-- [x] Sign Bitcoin transactions offline and Air-gapped (PSBT) (NEW from version 0.3.7)
+- [x] Create new Bitcoin wallets using the Offline device and with Air-gapped function 
+- [x] Sign Bitcoin transactions offline and Air-gapped (PSBT)
+- [x] Create and manage wallet transactions statements (NEW from version 0.3.8)
+- [x] Sign Bitcoin wallet messages to prove ovnership of wallet (NEW from version 0.3.8)
 - [x] Encrypted password storage
 - [x] Encrypted bitcoin wallet storage (seed's words, LNURLs etc) 
 - [x] Generate and manage your own digital ID's
@@ -62,9 +64,9 @@ Print the plastic parts you need.
 See also folder "3D" for other featured parts.
 
 ### Download and burn image
-Download [the latest image](https://www.mediafire.com/file/gcn3e4dc3v098oa/OfflineDevice_0_3_7_Pi2W.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start.
+Download [the latest image](https://www.mediafire.com/file/lxqfppqbj4xwutp/OfflineDevice_0_3_8_Pi2W.img.gz/file) and burn it to a microSD-card (min 32 gb) with balenaEtcher (recommended) or Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power on for it to start.
 
-To check the signature of the latest image use [the signature file](https://www.mediafire.com/file/crmvxytwowcldr9/OfflineDevice_0_3_7_Pi2W.img.gz.sig/file). First make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
+To check the signature of the latest image use [the signature file](https://www.mediafire.com/file/25begynptkcvsz7/OfflineDevice_0_3_8_Pi2W.img.gz.sig/file). First make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
 To run the Offline device with GUIApp version 0.3.7, and later, it's necessary to first burn the relevant/latest Image to the microSD-card (see above):
 
