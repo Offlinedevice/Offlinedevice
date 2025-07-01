@@ -40,15 +40,24 @@ Both option 2 and 3 adds the information about the added/created wallet into the
 When typing in the seed words it is important that the spelling is exactly right. If not the Offline device will produce an error message in the end and ask you to try again.
 When scanning the Jade for the signed transaction it helps to have a fixture or similar that raises the surface around the Jade to the same hight as the screen so that the camera reading the QR can auto focus better.
 
-Signing transactions with camera
+Signing transactions using the camera and QR-codes
 -----------------------------
 To make any Bitcoin on-chain transaction there are three basic steps:
 1. Create the transaction. This include getting "From" and "To -addresses from the wallets etc. It's normally done with an online device (such as a phone).
-2. Signing the transaction with a secret private key. THIS can be done with an offline device. This can protect your secret key from ever touching the Internet.
+2. Signing the transaction with your private key. THIS can be done with an offline device. This will protect your secret key from ever touching the Internet.
 3. Broadcasting the transaction to the blockchain. Again, done with a connected smart phone or computer.
 
-The Offline device reads a transaction (as a QR-code) from your phone with the built-in camera. You review the amounts and the where it's going etc. Then sign it with the private key that is on the Offline device.
-A new QR-code is generated and this you scan with the phones camera. The wallet on the phone will then broadcast it to the Bitcoin blockchain. To do it this way, creating the wallet offline, keeping the private key offline and signing transactions offline, is a level of security that is unmatched by pretty much anything you can find.. Anywhere. 
+The Offline device reads an unsigned transaction (as a QR-code) from your phone with the built-in camera. You review the amounts, the fee and the receiving address. Then you can choose to sign it with the private key that is on the Offline device.
+A new QR-code is then generated. This is then scanned using your phones camera. The wallet on the phone will then broadcast it to the Bitcoin blockchain. Doing it this way: 
+   (1) creating your wallet offline, 
+   (2) keeping the private key offline (at all times), and; 
+   (3) signing the transactions offline.
+Is a level of security that is unmatched by pretty much anything you can find.. Anywhere. 
+
+Signing Bitcoin messages and keeping tabs
+-----------------------------
+With the Offline device you can create any number of wallets. Therefor you can have one wallet ONLY for interacting with, let's say, Coinbase and another wallet for interacting with your business clients or your local tax office. Each wallet has a seperate accounting. If you get a question from any of them to "prove ownership" for your wallet, you can do so by selecting "Sign a message" for that specific wallet.
+Or if you are the manager of a department and the company you work for has a new, let's say, account for travel expenses.  The main office can create the wallet and encrypt the seed and send to you. You decrypt it on your offline device and add the new wallet alongside the other wallets you have. And now you can start signing expenses. 
 
 Bolt cards
 -----------------------------

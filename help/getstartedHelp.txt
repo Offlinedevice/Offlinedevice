@@ -69,13 +69,10 @@ Specifications
 Offline device parts list:
 
     • Raspberry PI case (can be printed from files using 3D printer) 
-    • Light guide (3D printed from file using transparent filament)
     • Raspberry PI zero 2 W (with male headers 2,54 mm for RTC-board, pin 1-9)
     • RTC (Real Time Clock), DS1307
     • Lithium battery, CR1220 3V 
     • MicroSD 64 gb (min 32 gb)
-    • Camera module (alt. ov5647, imx219 and imx708)
-    • Flex FFC cable for camera (~ 8 cm long)
 
 Software:
 
@@ -140,6 +137,12 @@ sudo apt install libccid pcsc-tools opensc
 
 sudo apt install build-essential python3-dev libgmp3-dev pkg-config postgresql postgresql-contrib pkg-config
 sudo apt-get install python3-pil.imagetk
+
+Create a virtual environment for python3:
+sudo apt install python3-venv
+python3 -m venv venvpython
+cd venvpython
+source bin/activate
 
 pip install wheel
 pip install customtkinter python-gnupg python-yubico libusb pyusb pillow pyscreenshot pywallet bip32 bip32utils bip39 mnemonic nostr
