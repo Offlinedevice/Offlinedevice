@@ -10,28 +10,28 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 
 ## Features
 
-- [x] Create strong encryption keys offline
+- [x] Create strong encryption keys offline (GnuPG)
 - [x] Manage your keys and do backups/export or add subkeys etc
 - [x] Sign and validate keys and documents in a secure way
 - [x] Fully open source (APGLv2)
 - [x] Manage your Yubikey 5C, including loading subkeys
-- [x] Secure archive of files that can be encrypted and backed-up
+- [x] Secure archive of files that can be encrypted and backed-up (RSA encryption acc. to RFC 4880)
 - [x] Encrypt and sign files or messages 
-- [x] Decrypt files or messages and check its signature
+- [x] Decrypt files or messages and check its signature (GnuPG)
 - [x] Backup and restore function including complete system cloning
 - [x] Generate Bitcoin keys offline and store/access through graphical interface
-- [x] Add Bitcoin wallets created from Jade hardware wallet with Air-gapped function
+- [x] Add Bitcoin wallets created from Jade hardware wallet or others with Air-gapped transaction signing etc (Native Segwit supported, BIP84)
 - [x] Create new Bitcoin wallets using the Offline device and with Air-gapped function 
-- [x] Sign Bitcoin transactions offline and Air-gapped (PSBT)
+- [x] Sign Bitcoin transactions offline and Air-gapped (PSBT, according to BIP174)
 - [x] Create and manage wallet transactions statements (NEW from version 0.3.8)
 - [x] Sign Bitcoin wallet messages to prove ovnership of wallet (NEW from version 0.3.8)
 - [x] Encrypted password storage
 - [x] Encrypted bitcoin wallet storage (seed's words, LNURLs etc) 
-- [x] Generate and manage your own digital ID's
+- [x] Generate and manage your own digital ID's (Web of Trust, OpenPGP)
 - [x] Generate your own Nostr Keys
 - [x] Transfer a Nostr private Key to a Nostr Signing Device
 - [x] Export IDs as image or as file (for upload to the "web-of-trust")
-- [x] Validate others digital ID's (standard (RFC4880)
+- [x] Validate others digital ID's (standard (RFC 4880)
 - [x] Store Bolt cards data for accessing load links (lighning Bitcoin), programming and resetting cards
 - [x] Read and program Bolt cards with a connected Smart card reader
 - [x] Customize your user settings with theme and colors
