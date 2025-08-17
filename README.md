@@ -21,10 +21,12 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 - [x] Backup and restore function including complete system cloning
 - [x] Generate Bitcoin keys offline and store/access through graphical interface
 - [x] Add Bitcoin wallets created from Jade hardware wallet or others with Air-gapped transaction signing etc (Native Segwit supported, BIP84)
-- [x] Create new Bitcoin wallets using the Offline device and with Air-gapped function 
+- [x] Create new Bitcoin wallets using the Offline device and with Air-gapped function
+- [x] Create Bitcoin wallets with dice throws (NEW from version 0.4.0)
+- [x] Inheritance package (NEW from version 0.4.0)
 - [x] Sign Bitcoin transactions offline and Air-gapped (PSBT, according to BIP174)
-- [x] Create and manage wallet transactions statements (NEW from version 0.3.8)
-- [x] Sign Bitcoin wallet messages to prove ovnership of wallet (NEW from version 0.3.8)
+- [x] Create and manage wallet transactions statements 
+- [x] Sign Bitcoin wallet messages to prove ovnership of wallet 
 - [x] Encrypted password storage
 - [x] Encrypted bitcoin wallet storage (seed's words, LNURLs etc) 
 - [x] Generate and manage your own digital ID's (Web of Trust, OpenPGP)
