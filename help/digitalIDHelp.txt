@@ -1,23 +1,31 @@
 ﻿
 Digital ID (and Nostr)
 -----------------------------
-In the digital age, your digital ID is everything. You don't allow the government to install codelocks on all your doors and then receive an electronic key that only works when they allow it. Similarly, a digital ID can be used for surveillance and control. Maybe it was the party that you voted for that won the election last time, and you like the controls, rules and restrictions. But maybe they lose the next election?
-Mass surveillance combined with centralized control over people's IDs and money transactions creates a honeypot for sociopaths and criminals. People and groups that want to control and have power over others will do and say anything to get to be that politician, banker, etc. History has proven this.  
-After an individual has generated her or his own ID (offline and securely) it's possible to send the public part of the key used for the ID to a government, company or organization etc for "signing/validating". It can then be uploaded, by the individual himself/herself to any number of public keyservers. When someone want to verify your identity they can simply scan a printed out copy of the ID, or a copy you have in your phone, and that will link to the pubic keyservers. If you you have the correct/needed signature(s) you are good. 
+In the digital age, your Digital ID is everything. If you create the Digital ID yourself, offline and use the private parts of the encryption keys also offline, then we can say that the Digital ID is yours. You own it, and are the ONLY person that controls it. To give people confidence in your keys you should let other (trusted persons) sign it. You build trust over time and when people and companies see that the key (ID) is highly validated they feel confident in that it "you".
+
+The main function for your Digital ID is not to encrypt messages or even to have private communication over the Internet. It's purpose is to:
+
+ (1). Prove who you are (logging in to services and apps etc).
+ (2). Signing important documents such as contracts, agreements, declarations and statements etc.
+ (3). Validate OTHERS Digital ID's and encryption keys.
+  
+It is perfectly safe to make the public part of your ID/key available to a government, a company or organization etc. When someone then wants to verify your identity they can simply look at or scan the ID's fingerprint (unique number) with a phone or computer and that will link to the pubic keyservers. If you you have the correct/needed signature(s) you are good. 
+Signatures that you made can be verified by anyone that has the public part of your Digital ID key. Logging into services can be done by the serice provider encrypting a "challange" to you using your public key and then only you having the corresponding private key can decrypt it and reveal the hidden "challange" needed to login.
+
 
 Creating a digital ID
 -----------------------------
-First, make sure that you have created an encryption key that you would like to use with the new ID being created. Then click "New ID" in the top left corner of the ID-menu. Insert the data as required (name and address, etc.). Have an appropriate photo ready to upload when instructed. The photo data size should be as small as possible (as it will be included in the key itself).  
-The dimensions of the photo should be 500 x 653 pixels and have good clarity. For more information, please check the local requirements. Only JPEG format is OK (ending with .jpg). 
+First, make sure that you have created an encryption key that you would like to use with the new ID being created (4096 bits long). Then click "New ID" in the top left corner of the ID-menu. Insert the data as required (name and address, etc.). Have an appropriate photo ready to upload when instructed (.jpg format). The photo data size should be small, 10 - 25kb (as it will be included in the key itself).  
+The dimensions of the photo should be 500 x 653 pixels and have good clarity. For more information, please check international and local requirements. 
 
 
 General use 
 -----------------------------
 First of all, don't create an ID using the key that encrypts/decrypts the offline device itself. It's good practice to create ID's in a specific order. The first ID is for main/general use, the second could be for professional use and third for gaming or anonymously using the web etc.
-Get signatures from trusted sources. Merge them with the key using the offline device and then export a new public part of the ID/key (see below). This can then be distributed and used for communication, verification and identification purposes. Remember, it's YOU that has control over your own digital ID. After creating new ID it's important that you make one or more backups.
+Get signatures from trusted sources. Merge them with the key using the offline device and then export a new public part of the ID/key (see below). This can then be distributed and used for verification and identification purposes etc. Remember, it's YOU that has control over your own Digital ID. After creating a new ID it's important that you make one or more backups.
 
 Get validating signatures.
-To increase the trust in your ID it is good to get verification, or signatures, from many trusted sources. In this way somebody who doesn't know you directly can look and see what other institutions, companies and individuals have verified your key and then hopefully trust its legitimacy.
+To increase trust in your ID it is good to get verification, or signatures, from trusted sources. This is done by them using their private key to "sign" your public key (and giving it back to you). In this way somebody who doesn't know you directly can look and see what other institutions, companies and individuals have verified your key and then hopefully trust that its yours.
 
 
 Make the key that you use for the digital ID known.
@@ -44,15 +52,16 @@ With an online computer, use the command "gpg --keyserver <key-server> --recv-ke
 
 Example: gpg --keyserver keys.openpgp.org --recv-keys B4FAFA9F52F2763E
 
-To move the key to the offline device, you first need to export the public key you downloaded from the local keychain to a file. Use the command "gpg --export --armor <key ID or fingerprint>".
-Then copy the generated file to a USB stick and move it to the offline device for import. 
+To move the key to the offline device, you first need to export the downloaded public key from the Internet connected phone or computers local keychain to a file. Use the command "gpg --export --armor <key ID or fingerprint>" on the Internet connected phone or computers.
+Then copy the new file to a USB stick and move it to the offline device for import. 
  
 
 Updating your public key on a public keychain (after adding validating signatures or subkeys to it) 
 -----------------------------
-1. Export a new public key- file from the master key using the offline device.
-2. Move the USB to an online computer.
-3. Go to https://keys.openpgp.org/upload (or the keyserver you use) and upload the updated public key. Alternatively, first import the key to the online computer's local keychain (gpg --import <key ID>) and then use the command: 
+1. Get your newly signed public key (see above) and move it to the Offline device using a USB-device. Select "Digital ID" -> "More options" -> "Add validation". 
+2. Export a new public key- file from the master key using the Offline device menu "Digital ID" - > "More options".
+3. Move the USB to an online computer.
+4. Go to https://keys.openpgp.org/upload (or the keyserver you use) and upload the updated public key. Alternatively, first import the key to the online computer's local keychain (gpg --import <key ID>) and then use the command: 
 "gpg --keyserver <key-server> --send-keys <key-id or fingerprint>".
 
 Nostr

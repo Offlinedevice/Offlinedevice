@@ -14,7 +14,11 @@ The Offline device has several way to add, create and store Bitcoin wallets. The
 3. Add a wallet seed from a hardware device:
     A trusted hardware wallet such as the Blockstream Jade are used to generate a new wallet (12 of 24 words and with or without passphrase). 
 
-4. Store wallets:
+4. Generate a Bitcoin wallet from random numbers of rolling dices
+    Get the random words for your seed phrase (wallet seed) from rolling dices. This mean that you don't have to rely on any computer hardware OR computer software to get the seed for your wallet.
+    Just make sure nobody is recording or watching you while you are doing it. 
+     
+5. Store wallets:
     When you already have a wallet you include it in the Secure folder's "Wallets" section. 
     This could be a seed phrase, a login to a Lightning hub or a recovery sentence etc.
 
@@ -34,9 +38,11 @@ Third option uses a well known hardware device for generating the wallet seed. W
 When using the Advanced option in Jade for generating a wallet it is needed to select to write down the "SeedQR" on paper. If not, the Jade will assume that you plan to have a PIN-code and store some secret on the device. But when using the Jade together with an Offline device it's only needed to write down all the seed words (and BIP39 passphrase if any) and not to "dot out" the QR-code. As an Offline device can generate the relevant SeedQR and Xpub based on the entered seed words (and any passphrase).
 The Xpub can be scanned from the Offline device PC screen instead of from the Jades small screen. IMPORTANT! You can always recover the wallet with a Jade if you have the seed words/SeedQR (and any passphrase). The use of the Offline device is not mandatory.  
 
-Forth option is to make an electronic copy for your wallet. It can include the wallets name, seed words, passphrase and a general description etc. When you then make a backup for the Offline device you have also a backup of your wallets secret data.
+Fouth option is if you maybe don't have another hardware wallet that cn generate seed words and you don't want to trust the random generator (or code) of the Offline device. Each word can be checked that it corresponds to the binary representation entered by rolling the dice. Dice value 1, 2 and 3 represent a zero (0) and values 4, 5, and 6 represents a one (1). See Internet (AI?) to learn about converting binary to decimal and also about the list of words in BIP39 (Bitcoin standard).
 
-Both option 2 and 3 adds the information about the added/created wallet into the Secure folder's "Wallets"- section. It good practice to add information in the description for newly added or created wallets on HOW they was generated (so afterward you know how much it can be trusted).
+Fifth option is to make an electronic copy for your wallet. It can include the wallets name, seed words, passphrase and a general description etc. When you then make a backup for the Offline device you have also a backup of your wallets secret data.
+
+Both option 2, 3 and 4 adds the information about the added/created wallet into the Secure folder's "Wallets"- section. It good practice to add information in the description for newly added or created wallets on HOW they was generated (so afterward you know how much it can be trusted).
 When typing in the seed words it is important that the spelling is exactly right. If not the Offline device will produce an error message in the end and ask you to try again.
 When scanning the Jade for the signed transaction it helps to have a fixture or similar that raises the surface around the Jade to the same hight as the screen so that the camera reading the QR can auto focus better.
 
@@ -109,3 +115,21 @@ Reset the Bolt card 
 -----------------------------
 If you like to re-use the Bolt card you have to reset it with the exact reset code that was generated when programming it in the first place. If you don't have this code you can't re-use the card, it's that simple.
 Open the "Boltscard NFC Programmer”-app on your phone and select reset option. Scan the reset QR-code with the phone's camera. Hit reset card and hold the card up to the phone's NFC chip (on the back of the phone). If it doesn't work please try one more time (as there could have been some disruption in the NFC transfer).
+
+
+Inheritance 
+-----------------------------
+An inheritance package is a way to leave your encrypted data, such as Bitcoin wallets etc, to a third party without risking that it gets stolen. It consists of three files:
+1. The encrypted archive. This contains the parts from the offline device you have selected. It is encrypted with a seperate key.  
+2. The encryption key.
+3. A signature file. This is a signature file created with your regular key for the encrypted (inheritance) archive. 
+
+The encrypted file/archive can be decrypted on any Mac, Windows and Linux machine with GPG-software installed (almost all computers). The reciver don't need to have an Offline device or any graphical interface software. Files are readeable in a normal text editor etc. But ONLY if they have all parts: the file/archive, the secret key and the secret passsword. 
+ 
+Don't use any of your regular passwords. Your beneficiaries probably can gain access to your Offline device or backups etc. It's best to inform the beneficiaries who the trusted parties are, who to contact in case of recovering the inheritance. And to always keep the password hidden and stored in a safe manner (and not to mention it to any outsider).
+
+The beneficiary (your children etc) gets the secret password that you used when creating the inheritance package and they also should have a copy of your regular encryption key's public part. Using that, they can later on verify that it was YOU that signed the archive.
+It is also possible to make a timestamp on the Bitcoin blockchain for the combination of signature and archive. Then the beneficiary can know WHEN the files where first signed (by you).
+
+It is best to give the inheritance package (the three files) to more than one trusted person/company. The main idea is that the ones with the secret password should NOT have access to the inheritance package before you pass away (or decides to give it to them). 
+It's a good idea to store the files (inheritance archive, the secret key and the signature file) on a couple of strong and dureable USB-device such as Corsair Flash Survivor Stealth or similar.

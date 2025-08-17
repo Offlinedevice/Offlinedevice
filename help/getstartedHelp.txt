@@ -10,14 +10,16 @@ The Offline device is a tool for generating and managing encryption keys, settin
   * Issuing and managing digital ID’s.
   * Generate and store Nostr private and public keys
   * Transfer Nostr keys to a Nostr Signing Device (NSD)
-  * Receive and store secure copies of Bolt cards (load address, reset address and programming keys).
+  * Receive and store secure copies of Bolt cards data (load address, reset address and programming keys).
   * Generate and store single BTC wallet key-pair addresses (offline cold storage).
   * Generate and add Bitcoin wallets that can be used with an external signing device (such as Blockstream Jade).
   * Export Xpub from hardware wallets and sign Partially Signed Bitcoin Transactions (PSBT) with connected camera.
     Supported models are ov5647, imx219 and imx708.
+  * Keep a statement for each wallet on the device
   * Store details of Passkeys.
   * Encrypt/decrypt messages/texts and check signatures etc.
   * Sign public encryption keys and files.
+  * Generate an inheritance package for wallet etc that are on the Offline device
 
 
 General use
@@ -73,12 +75,11 @@ Offline device parts list:
     • RTC (Real Time Clock), DS1307
     • Lithium battery, CR1220 3V 
     • MicroSD 64 gb (min 32 gb)
+    * PI camera ov5647, imx219 and imx708
 
-Software:
+Operating system:
 
     • Raspberry PI Debian 64 bit operating system
-    • CUPS, Common UNIX Printing System (optional)
-
 
 Building a offline device from scratch 
 -----------------------------
@@ -138,12 +139,6 @@ sudo apt install libccid pcsc-tools opensc
 sudo apt install build-essential python3-dev libgmp3-dev pkg-config postgresql postgresql-contrib pkg-config
 sudo apt-get install python3-pil.imagetk
 
-Create a virtual environment for python3:
-sudo apt install python3-venv
-python3 -m venv venvpython
-cd venvpython
-source bin/activate
-
 pip install wheel
 pip install customtkinter python-gnupg python-yubico libusb pyusb pillow pyscreenshot pywallet bip32 bip32utils bip39 mnemonic nostr
 pip install tkcalendar tktimepicker bech32 base58 qrcode pyscreenshot opencv-python pyzbar embit
@@ -161,6 +156,7 @@ bluebackground.jpg
 bluewaves.jpg
 boltcardbackground.JPG
 boltcardicon.JPG
+Rose_ICON.jpg
 BTC_icon_black.jpg
 BTC_icon_blue.jpg
 BTC_icon_green.jpg
@@ -176,6 +172,9 @@ iconlockedold.png
 iconopen.png
 iconopenold.png
 ID_map.png
+ID_map_back.png
+defaultcardIcon.jpg
+defaultcardIcon_back.jpg
 lightbackground.jpg
 lightbackgroundmid.jpg
 login.png
@@ -189,11 +188,13 @@ winterbackground.jpg
 winterbackgroundmid.jpg
 Yubikey5CBackground.JPG
 settings_icon.jpg
+Inheritance_background.JPG
 
 And in folder /home/user1/Pictures:
 AI_boy.png
 AI_man.png
 blue.jpg
+bitcoin_bkg_.jpg
 user_anon.png
 AI_face.JPG
 AI_woman.png
@@ -209,3 +210,4 @@ Copy the file GUIApp.py to the folder /home/user1/
 Edit autostart in order to get the GUI app to start when powered up.
 nano /home/user1/.config/lxpanel/LXDE-pi/autostart and add line @lxterminal -e python /home/user1/GUIApp.py
 
+Also check www.github.com/Offlinedevice/offlinedevice for the latest details!
