@@ -22,8 +22,8 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 - [x] Generate Bitcoin keys offline and store/access through graphical interface
 - [x] Add Bitcoin wallets created from Jade hardware wallet or others with Air-gapped transaction signing etc (Native Segwit supported, BIP84)
 - [x] Create new Bitcoin wallets using the Offline device and with Air-gapped function
-- [x] Create Bitcoin wallets with dice throws (NEW from version 0.4.0)
-- [x] Inheritance package (NEW from version 0.4.0)
+- [x] Create Bitcoin wallets with dice throws
+- [x] Inheritance package
 - [x] Sign Bitcoin transactions offline and Air-gapped (PSBT, according to BIP174)
 - [x] Create and manage wallet transactions statements 
 - [x] Sign Bitcoin wallet messages to prove ovnership of wallet 
@@ -37,7 +37,8 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 - [x] Store Bolt cards data for accessing load links (lighning Bitcoin), programming and resetting cards
 - [x] Read and program Bolt cards with a connected Smart card reader
 - [x] Customize your user settings with theme and colors
-- [x] Include support for Real Time Clock (battery powered hardware clock) 
+- [x] Include support for Real Time Clock (battery powered hardware clock)
+- [x] Option for strong password generation (also with user entropy) (NEW from version 0.4.2)
 
 ## Using the Offine device
 
