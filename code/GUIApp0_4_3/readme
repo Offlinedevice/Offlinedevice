@@ -1,0 +1,2 @@
+Files with code. A full image that can be burned to a microSD- card with minimum 32 gb storage in linked on the Project main page. Note the image is only operational with the specified hardware: Raspberry Pi zero 2 W + RTC (Real Time Clock), PI camera (ov5647/imx219/imx708), DS1307 (connected at pins 1-10).
+Update to version 0.4.3 can be done with GUIApp0_4_3.tar.gz (already installed version of GUIApp.py needs to be version 0.4.1 or later). Download of the full image (OfflineDevice_0_4_3_Pi2W.img) (see link in description).
