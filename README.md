@@ -110,8 +110,8 @@ A statement for each Bitcoin wallet. Transactions signed by the Offline Device a
 ## Digital IDs
 Controlling your own digital ID is as important as controlling your own digital money. The Offline device gives an easy way to create IDs and encrypted files that can be uploaded to public keyservers around the word. Including picture ID/key. 
 
-One for personal use:
-<p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/ID_personal_demo.png"></p>
+For personal use:
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/c0d7a2a3463dd7f58e6bc44cba59d105d26ab20c/ID_Karin_Demo.JPG"></p>
 
 And maybe one for epic gamer ID:
 <p align="center"><img src="https://github.com/Offlinedevice/project/blob/291037e6e33de97521e22a7abb742123ab7c2843/ID_gamer_demo.png"></p>
