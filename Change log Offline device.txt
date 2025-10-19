@@ -1,0 +1,58 @@
+Changes for GUIApp.py software for Offline device
+
+2025-07-18:
+News in version 0.3.9:
+- Air-gapped Bitcoin message signing (proof of wallet ownership).
+- Fix for message signing using textfiles.
+
+The worlds first! Use Bitcoin fully Air-gapped: - Air-gapped wallet creation. - Air-gapped transaction signing. - Air-gapped Bitcoin message signing (proof of wallet ownership). 
+
+2025-08-17:
+News in version 0.4.0:
+- Inheritance package.
+- Creating new Bitcoin wallets seeds with dice throws.
+- Various improvements for Secure archive, Digital ID's and Bolt cards.
+
+2025-08-28:
+News in version 0.4.1:
+- Simplified recovery process.
+- Simplified account creation.
+- Various improvements for Dice wallets, Backups and graphics.
+ 
+2025-08-28:
+Version 0.4.1b:
+- Patch for fixing issue with creating inheritance package.
+
+2025-09-04:
+New in version 0.4.2:
+- Option for using strong password (also with users entropy) for:
+	- Encryption keys.
+	- Inheritance package.
+	- Bitcoin wallets.
+	- General purpose application.
+- Export wallet seed as encrypted and signed message (auto detect when decrypting message).
+
+2025-09-10:
+New in version 0.4.3:
+- Option for using strong password (also with users entropy) for new account.
+- Changed visuals.
+- Exception handling.
+
+2025-09-30:
+New in version 0.4.4:
+- Web-of-trust for keys, encryption and checking signatures/identity/trust.
+- Groups for public keys. One-click group actions for importing/exporting keys and for encryption.
+- Assign trust, alias and groups when importing keys (also when importing multiple keys at once).
+- Auto recovery for Digital ID’s and encryption keys.
+
+2025-10-13:
+New in version 0.4.5:
+- Key management, new layout with pictures, expire date etc.
+- Record keeping for Digital ID’s and keys.
+- Updated help texts.
+
+2025-10-19:
+New in version 0.4.6:
+- Fix for creating new account.
+- Fix for recovering account.
+- Fix for exporting a public key(s).
