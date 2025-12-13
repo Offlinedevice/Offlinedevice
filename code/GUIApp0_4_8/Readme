@@ -1,0 +1,2 @@
+A full image that can be burned to a microSD- card with minimum 32 gb storage as linked on the Project main page. Note, the image is only operational with specified hardware: Raspberry Pi zero 2 W or Pi 4b + RTC (Real Time Clock), PI camera (ov5647/imx219/imx708), DS1307 (connected at pins 1-10).
+Update to version 0.4.8 can be done with GUIApp0_4_8.tar.gz (the already installed version of GUIApp.py needs to be version 0.4.1 or later).
