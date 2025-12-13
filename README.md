@@ -68,9 +68,9 @@ See also folder "3D" for other featured parts.
 
 ### Download and burn image
 Download the latest full image and verify it with the corresponding signature. Select the one for your system:
-* [Raspberry Pi 2 W](https://www.mediafire.com/file/4ts8qlduj4j5w81/OfflineDevice_0_4_8_Pi2W.img.gz/file)
+* [Raspberry Pi 2 W Image (1,9 gb)](https://www.mediafire.com/file/4ts8qlduj4j5w81/OfflineDevice_0_4_8_Pi2W.img.gz/file)
 * [Raspberry Pi 2 W Signature](https://www.mediafire.com/file/nfaoekignb46t19/OfflineDevice_0_4_8_Pi2W.img.gz.sig/file)
-* [Raspberry Pi 4b](https://www.mediafire.com/file/2lqkmtgib8jm4gr/OfflineDevice_0_4_8_Pi4.img.gz/file)
+* [Raspberry Pi 4b Image (1,8 gb)](https://www.mediafire.com/file/2lqkmtgib8jm4gr/OfflineDevice_0_4_8_Pi4.img.gz/file)
 * [Raspberry Pi 4b Signature](https://www.mediafire.com/file/nf65cgw8p8s4fk0/OfflineDevice_0_4_8_Pi4.img.gz.sig/file)
    
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
