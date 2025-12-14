@@ -1,0 +1,28 @@
+Inheritance package
+-----------------------------
+An inheritance package is a way to leave your encrypted data, such as Bitcoin wallets etc, to a third party without risking that it gets stolen. It consists of three files:
+1. The encrypted archive. This contains the parts from the Offline device that you have selected. It is encrypted with a seperate key.  
+2. The encryption key.
+3. A signature file. This is a signature file is created with your regular key for the encrypted (inheritance) archive. 
+
+The encrypted file/archive can be decrypted on any Mac, Windows and Linux machine with GPG-software installed (almost all computers). The reciver don't need to have an Offline device or any graphical interface software. Files are readeable in a normal text editor etc. But ONLY if they have all parts: the file/archive, the secret key and the secret passsword. 
+ 
+Don't use any of your regular passwords. USE AN EXTRA STRONG PASSWORD as both the key and encrypted archive is at the same custodian it is very important that the password is super strong.
+
+Your beneficiaries probably can gain access to your Offline device or backups etc. It's best to inform the beneficiaries who the trusted third parties are, e.g who to contact in case of needing to recover the inheritance. And to always keep the password they are given hidden and stored in a safe manner (and not to mention it to any outsider).
+
+The beneficiary (your children etc) gets the secret password that you used when creating the inheritance package and they also should have a copy of your regular encryption key's public part. Using that, they can later on verify that it was YOU that signed the archive.
+It is also possible to make a timestamp on the Bitcoin blockchain for the combination of signature and archive. Then the beneficiary can know WHEN the files where first signed (by you).
+
+It is best to give the inheritance package (the three files) to more than one trusted person/company. The main idea is that the ones with the secret password should NOT have access to the inheritance package before you pass away (or decides to give it to them). 
+It's a good idea to store the files (inheritance archive, the secret key and the signature file) on a couple of strong and dureable USB-device such as Corsair Flash Survivor Stealth or similar.
+
+When creating an inhritance package a record will be included in your "Passwords"- file (select menu "Secure archive" to view it). This record also include the EXTRA STRONG PASSWORD you created. To give this password to your beneficiaries in a secure way:
+	- Make sure you have imported the beneficiaries public keys to your local keychain.
+	- Copy the password from the Passwords- view to the clipboard (highlight it and use Ctrl-C).
+	- Go to "Secure archive" -> "Encrypt/view a text" and paste it in by clicking on "Paste from clipboard".
+	- Write some text to explain to the receiver what the password is for and how to use it.
+	- Select a private key that you want to use to encrypt FROM (make sure that the beneficiaries has the public key).
+	- Select the beneficiary public key as the key t encypt the message TO. 
+
+If the beneficiaries don't have public encryption keys or they don't know how to use encryption etc. It is best to write down the password along with the instructions on what it is for and how to use it (and who the trusted third parties are that are holding the key and archive) in case you are not around anymore..
