@@ -27,11 +27,25 @@ Using the different keys on the Offline Device own local keychain you can do dif
 * Signing other peoples public keys (and then export it to a file and giving it to the owner of the key. In this way they can build trust for their key)
 * Timestamp signatures and files on the Bitcoin blockchain, using sha256sum(s), to generate an unique BTC address (bech32 encoded, script type p2wsh) that a transaction is sent to and thus recorded it on the blockchain).
 
-This way we can:
-* secure WHO the sender is;
-* secure that the information has not been modified;
-* make sure that the information can only be access by the owner of the private key;
-* secure when the signature and file (or only file) was first timestamped (e.g that its the original file(s)   
-* build trust in keys by signing them (e.g Bob knows Alice that knows Frank. If Alice has sign Franks key, with her private key, Bob can know that messages signed with that particular key is probably legit and actually from Frank).
+Key validity, (owner) trust and the "Web-of-trust
+-----------------------------
+Keys have two different types of "trust". One is how much trust there is that the owner of the key can understand and conduct proper key signing. The other is trust in the key itself that it's legit. 
+Examples:
+1. If a public key K1 (that you received from someone else) is signed by you it be shown in green. You can use it for encrypting a message no problem. 
+2. If the key K1 is assigned (owner) trust at a level of "FULLY_TRUSTED" and then you receive another key (let's call it key K2) that is sign by key K1, it will show as "Valid" in orange color. OK to use as it has implied trust by beeing signed by key K1 owner (that you trust fully to sign keys).
+3. If a received key that is not signed by you, and not signed by anyone you have given (owner) trust, you can still use it to check signatures or encrypt with but the system will warn you that it's not validated.
+4. The "trust" that you assign keys (when importing them etc) is a local thing. It is not included if you export the key from the local keychain or if you recover the account on another machine etc.
+
+It's good practice to sign keys that you KNOW belong to the correct person. It is good practice to VERY carefull about assigning "owner" trust as only a very few number of people has the skills and proper routines to make signing on other key's with proper due diligence.
+
+Summery
+-----------------------------
+* Never let a private master key (also known as the certification key) leave your offline device.
+* If you want to use a key for decryption and signing it's best to create subkeys and export them to an online computer/phone.
+* Secure WHO the sender is.
+* Secure that the information has not been modified.
+* Make sure that the information can only be access by the owner of the correct key.
+* Secure when the signature and file (or only file) was first timestamped (e.g that its the original file(s)   
+* Build trust in keys by signing them (e.g if Alice has sign Franks key, Bob that trusts Alice can know that messages signed by Bob is OK).
 
  
