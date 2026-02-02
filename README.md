@@ -61,9 +61,9 @@ Build the Offline device using common parts. See [Getting started guide](https:/
 
 ### 3D- print parts 
 Print the plastic parts you need (for the Pi2W version):
-* [Base part](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/PIzeroBoxRoundedwithCamera.stl)
-* [Lid for build with camera model 1/2](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LidPIzeroBoxwithCameraModel_1_and_2.stl)
-* [Alt. lid for camera model 3 (12 MP and auto focus lens)](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LidPIzeroBoxwithCameraModel3.stl)
+* [Base part](https://github.com/Offlinedevice/Offlinedevice/blob/d2cac1ccb760c72b4b48687ddf011962df0110b7/3D/PIzerobox/PIzeroBoxRoundedwithCamera_v2.stl)
+* [Lid for build with camera model 1/2](https://github.com/Offlinedevice/Offlinedevice/blob/d2cac1ccb760c72b4b48687ddf011962df0110b7/3D/PIzerobox/LidPIzeroBoxwithCameraModel3_v2.stl)
+* [Alt. lid for camera model 3 (12 MP and auto focus lens)](https://github.com/Offlinedevice/Offlinedevice/blob/d2cac1ccb760c72b4b48687ddf011962df0110b7/3D/PIzerobox/LidPIzeroBoxwithCameraModel3_v2.stl)
 * [LED guide](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LEDguide.stl)
 
 See also the folder for other featured 3D- parts (such as for the Pi 4B and Pi 5).
