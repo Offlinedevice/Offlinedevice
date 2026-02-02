@@ -1,0 +1,36 @@
+Guide for Docking station for Offline device, Pi Zero 2W:
+
+Items needed for the build:
+* Small screwdriver and 5 pcs of M2 x 16 mm screws.
+* The 5 printed parts from the 3D files (optional also the dummy lid).
+* A USB-power cable with micro USB- connector (see below).
+* A OTG- cable (micro-USB) or similar (see below).
+* A HDMI- cable with mini-HDMI connector (see below).
+
+1. Print the 5 parts with suitable material in a 3D- printer.
+
+2. The 3D- printed part that holds the cables are specially made for (but there might be other that fits):
+	
+* https://www.amazon.com/Twozoh-Mini-HDMI-Cable/dp/B08R9XWKXK 
+* https://www.electrokit.com/en/usb-otg-adapter 
+* https://www.amazon.se/Greluma-Micro-Av-Str%C3%B6mbrytar-Kabel-Str%C3%B6mbrytar-Kabel-Raspberry/dp/B09TLH7MH4?th=1 
+
+3. The two USB- cables can be permanently fixed/potted (using glue or resin) to the base plate thanks to the cavity that they pass through. It is also possible to add a NTAG- chip under the resin (12 x 19 mm ). One example: https://www.shopnfc.com/en/nfc-stickers/32-12mm-micro-ntag213-stickers.html).
+
+4. First assemble the top cover with the lever arm. Getting the top cover to go around the lever arm’s round shaft can need a little finessing, and pressure. It’s a tight fit.
+
+5. Connect the cable holder part to the base plate. There is a cavity in the base plate (3.8 x 27 x 56 mm). Here you can add a steel plate or similar to add some extra weight to the finnished product.
+
+6. There are two cavities under the base plate for optional magnets (10mm in diameter and max height 3,2 mm). The idea is that they should pull on two of the screws that is there on the Offline device in order to help in ”land” correctly in place before closing the docking station (optional).
+
+7. But the sled part between the baseplate/cable holder and the lever arm/top cover and press together.
+
+8. Screw the assembled part together with the 5 screws. Put super glue over the screws (to prevent tampering). Place soft rubbery padding to the bottom side to prevent the docking station to slide around on your tabletop.
+
+If you have a permenant marking such as with a NFC-chip etc you can place the number/code under ”settings” 
+in the Offline device. This way it will show-up at the start screen when powering up. Although, 
+the point is to check the numbers/NFC before you connect the Offline device. And after the device has 
+powered-up you check the keyboard and mouse in a similar fashion before connecting them to the 
+docking station If using an official Raspberry Pi keyboard the system will automatically recognize the 
+keyboards layout/language. Also then you will get a built-in USB-hub for connecting a mouse and 
+external USB-sticks.
