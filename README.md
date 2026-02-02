@@ -60,24 +60,25 @@ Connect the Offline device with cables to a monitor, a keyboard and a mouse. It 
 Build the Offline device using common parts. See [Getting started guide](https://github.com/Offlinedevice/Offlinedevice/blob/057806e96a671aa06b3eac34bdbc17a77e54d67b/help/getstartedHelp.txt)
 
 ### 3D- print parts 
-Print the plastic parts you need.
+Print the plastic parts you need (for the Pi2W version):
 * [Base part](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/PIzeroBoxRoundedwithCamera.stl)
 * [Lid for build with camera model 1/2](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LidPIzeroBoxwithCameraModel_1_and_2.stl)
 * [Alt. lid for camera model 3 (12 MP and auto focus lens)](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LidPIzeroBoxwithCameraModel3.stl)
 * [LED guide](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LEDguide.stl)
 
-See also folder "3D" for other featured parts (such as for Pi 4B and Pi 5).
-3D part for the docking station (for Raspberry Pi Zero 2W) can be found [here](https://github.com/Offlinedevice/Offlinedevice/tree/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation) and the build guide for it [here](https://github.com/Offlinedevice/Offlinedevice/blob/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation/Readme) 
+See also the folder for other featured 3D- parts (such as for the Pi 4B and Pi 5).
+
+For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files [here](https://github.com/Offlinedevice/Offlinedevice/tree/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation) and the build guide for it [here](https://github.com/Offlinedevice/Offlinedevice/blob/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation/Readme) 
 
 ### Download and burn image
-Download the latest full image and verify it with the corresponding signature. Select the one for your system:
+Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system (latest update files is [here](https://github.com/Offlinedevice/Offlinedevice/tree/57a8e18c118e2a223f7c083db2d5fd88eb6c1baf/code/GUIApp0_5_0):
 * [Raspberry Pi 2 W Image (1,61 gb)](https://www.mediafire.com/file/dyqf31nfti865c9/GUIApp_0_5_0_Pi2W.img.gz/file)
 * [Raspberry Pi 2 W Signature](https://www.mediafire.com/file/v9lav3185x2y1vu/GUIApp_0_5_0_Pi2W.img.gz.sig/file)
 * [Raspberry Pi 4b Image (1,55 gb)](https://www.mediafire.com/file/p8svg9ldnuqoj0k/GUIApp_0_5_0_Pi4B.img.gz/file)
 * [Raspberry Pi 4b Signature](https://www.mediafire.com/file/9bytf9l9o66xoxc/GUIApp_0_5_0_Pi4B.img.gz.sig/file)
 * [Raspberry Pi 5 Image (2,39 gb)](https://www.mediafire.com/file/a0lqe5oyme5s0so/GUIApp_0_5_0_Pi5.img.gz/file) 
 * [Raspberry Pi 5 Signature](https://www.mediafire.com/file/kqq5zuoguliizik/GUIApp_0_5_0_Pi5.img.gz.sig/file)
-*  
+ 
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
 Then burn it to a microSD-card (min 32 gb) with BalenaEtcher (recommended) or the Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power ON for it to start.
