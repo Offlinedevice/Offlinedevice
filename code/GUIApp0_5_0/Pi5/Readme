@@ -1,0 +1,2 @@
+A full image that can be burned to a microSD- card with minimum 32 gb storage as linked on the Project main page. Note, the image is only operational with specified hardware: Raspberry Pi 5, Real Time Clock Battery (rechargeable) and a PI camera module (ov5647/imx219/imx708)
+Update to version 0.5.0 can be done with GUIApp_0_5_0_Pi5.tar.gz (the already installed version of GUIApp.py needs to be version 0.4.1 or later). 
