@@ -68,10 +68,10 @@ Print the plastic parts you need (for the Pi2W version):
 
 See also the folder for other featured 3D- parts (such as for the Pi 4B and Pi 5).
 
-For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files [here](https://github.com/Offlinedevice/Offlinedevice/tree/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation) and the build guide for it [here](https://github.com/Offlinedevice/Offlinedevice/blob/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation/Readme) 
+For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files [here](https://github.com/Offlinedevice/Offlinedevice/tree/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation) and the build guide for it [here](https://github.com/Offlinedevice/Offlinedevice/blob/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation/Readme).
 
 ### Download and burn image
-Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system (latest update files is [here](https://github.com/Offlinedevice/Offlinedevice/tree/57a8e18c118e2a223f7c083db2d5fd88eb6c1baf/code/GUIApp0_5_0):
+Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/4855b2368ff977ab67ade932a3cff6f1e0c0f80c/code/GUIApp0_5_0).
 * [Raspberry Pi 2 W Image (1,61 gb)](https://www.mediafire.com/file/dyqf31nfti865c9/GUIApp_0_5_0_Pi2W.img.gz/file)
 * [Raspberry Pi 2 W Signature](https://www.mediafire.com/file/v9lav3185x2y1vu/GUIApp_0_5_0_Pi2W.img.gz.sig/file)
 * [Raspberry Pi 4b Image (1,55 gb)](https://www.mediafire.com/file/p8svg9ldnuqoj0k/GUIApp_0_5_0_Pi4B.img.gz/file)
