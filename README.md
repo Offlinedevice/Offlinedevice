@@ -72,7 +72,7 @@ For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files 
 
 ### Download and burn image
 Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/4855b2368ff977ab67ade932a3cff6f1e0c0f80c/code/GUIApp0_5_0).
-* [Raspberry Pi 2 W Image (1,61 gb)]([https://www.mediafire.com/file/2uawfkl6efp67u5/GUIApp_0_5_1_Pi2W.img.gz/file))
+* [Raspberry Pi 2 W Image (1,61 gb)](https://www.mediafire.com/file/2uawfkl6efp67u5/GUIApp_0_5_1_Pi2W.img.gz/file)
 * [Raspberry Pi 2 W Signature](https://www.mediafire.com/file/6vgyf68p36grd0g/GUIApp_0_5_1_Pi2W.tar.gz.sig/file)
 * [Raspberry Pi 4b Image (1,55 gb)](https://www.mediafire.com/file/houux2o5hal4mtv/GUIApp_0_5_1_Pi4B.img.gz/file)
 * [Raspberry Pi 4b Signature](https://www.mediafire.com/file/jfxmn2tf8lrum2f/GUIApp_0_5_1_Pi4B.tar.gz.sig/file)
