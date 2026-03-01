@@ -72,12 +72,12 @@ For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files 
 
 ### Download and burn image
 Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/4855b2368ff977ab67ade932a3cff6f1e0c0f80c/code/GUIApp0_5_0).
-* [Raspberry Pi 2 W Image (1,61 gb)](https://www.mediafire.com/file/dyqf31nfti865c9/GUIApp_0_5_0_Pi2W.img.gz/file)
-* [Raspberry Pi 2 W Signature](https://www.mediafire.com/file/v9lav3185x2y1vu/GUIApp_0_5_0_Pi2W.img.gz.sig/file)
-* [Raspberry Pi 4b Image (1,55 gb)](https://www.mediafire.com/file/p8svg9ldnuqoj0k/GUIApp_0_5_0_Pi4B.img.gz/file)
-* [Raspberry Pi 4b Signature](https://www.mediafire.com/file/9bytf9l9o66xoxc/GUIApp_0_5_0_Pi4B.img.gz.sig/file)
-* [Raspberry Pi 5 Image (2,39 gb)](https://www.mediafire.com/file/a0lqe5oyme5s0so/GUIApp_0_5_0_Pi5.img.gz/file) 
-* [Raspberry Pi 5 Signature](https://www.mediafire.com/file/kqq5zuoguliizik/GUIApp_0_5_0_Pi5.img.gz.sig/file)
+* [Raspberry Pi 2 W Image (1,61 gb)]([https://www.mediafire.com/file/2uawfkl6efp67u5/GUIApp_0_5_1_Pi2W.img.gz/file))
+* [Raspberry Pi 2 W Signature](https://www.mediafire.com/file/6vgyf68p36grd0g/GUIApp_0_5_1_Pi2W.tar.gz.sig/file)
+* [Raspberry Pi 4b Image (1,55 gb)](https://www.mediafire.com/file/houux2o5hal4mtv/GUIApp_0_5_1_Pi4B.img.gz/file)
+* [Raspberry Pi 4b Signature](https://www.mediafire.com/file/jfxmn2tf8lrum2f/GUIApp_0_5_1_Pi4B.tar.gz.sig/file)
+* [Raspberry Pi 5 Image (2,39 gb)](https://www.mediafire.com/file/qs0monxhhr5aoj2/GUIApp_0_5_1_Pi5.img.gz/file) 
+* [Raspberry Pi 5 Signature](https://www.mediafire.com/file/9549ksvja9kf391/GUIApp_0_5_1_Pi5.img.gz.sig/file)
  
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
