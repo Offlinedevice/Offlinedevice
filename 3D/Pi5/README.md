@@ -3,6 +3,8 @@
  - RTC battery
  - PN532 RFID module V3 
  - 5V 3007 Fan PWM Speed Adjustable CPU Cooling fan
+ - LED, RGB model WS2812D
+ - Cable for camera, MIPI 22-pin to FPC 15-pin (CSI), 8 cm
  - Pi camera module 1, 2 or 3
 
 ## Wiring schematics Raspberry Pi 5
