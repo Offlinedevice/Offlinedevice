@@ -7,4 +7,4 @@
 ## Wiring schematics Raspberry Pi Zero 2 W:
 Make sure to use the correct Lid as the camera modules differ in height. Use 2 mm screws with the right lenght. 
 
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/07b9d838a69ede330172ac99813212de9a388e9d/3D/PiZero2W/Schematic_Pi2W_wiring.JPG"></p>
+[Wiring diagram](3D/PiZero2W/Schematic_Pi2W_wiring.JPG")
