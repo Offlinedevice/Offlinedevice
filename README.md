@@ -40,7 +40,8 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 - [x] Read and program Bolt cards with a connected Smart card reader
 - [x] Customize your user settings with theme and colors
 - [x] Include support for Real Time Clock (battery powered hardware clock)
-- [x] Option for strong password generation (also with user entropy) (NEW from version 0.4.2)
+- [x] Option for strong password generation (also with user entropy)
+- [x] Option for use of hardware keys for secure login etc (NTAG)
 
 ## Using the Offine device
 
@@ -66,18 +67,16 @@ Print the plastic parts you need (for the Pi2W version):
 * [Alt. lid for camera model 3 (12 MP and auto focus lens)](https://github.com/Offlinedevice/Offlinedevice/blob/d2cac1ccb760c72b4b48687ddf011962df0110b7/3D/PIzerobox/LidPIzeroBoxwithCameraModel3_v2.stl)
 * [LED guide](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LEDguide.stl)
 
-See also the folder for other featured 3D- parts (such as for the Pi 4B and Pi 5).
+See also the folder for other featured 3D- parts (such as the Pi 5).
 
 For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files [here](https://github.com/Offlinedevice/Offlinedevice/tree/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation) and the build guide for it [here](https://github.com/Offlinedevice/Offlinedevice/blob/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation/Readme).
 
 ### Download and burn image
 Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/4855b2368ff977ab67ade932a3cff6f1e0c0f80c/code/GUIApp0_5_0).
-* [Raspberry Pi 2 W Image (1,61 gb)](https://www.mediafire.com/file/2uawfkl6efp67u5/GUIApp_0_5_1_Pi2W.img.gz/file)
-* [Raspberry Pi 2 W Signature](https://www.mediafire.com/file/6vgyf68p36grd0g/GUIApp_0_5_1_Pi2W.tar.gz.sig/file)
-* [Raspberry Pi 4b Image (1,55 gb)](https://www.mediafire.com/file/houux2o5hal4mtv/GUIApp_0_5_1_Pi4B.img.gz/file)
-* [Raspberry Pi 4b Signature](https://www.mediafire.com/file/jfxmn2tf8lrum2f/GUIApp_0_5_1_Pi4B.tar.gz.sig/file)
-* [Raspberry Pi 5 Image (2,39 gb)](https://www.mediafire.com/file/qs0monxhhr5aoj2/GUIApp_0_5_1_Pi5.img.gz/file) 
-* [Raspberry Pi 5 Signature](https://www.mediafire.com/file/9549ksvja9kf391/GUIApp_0_5_1_Pi5.img.gz.sig/file)
+* [Raspberry Pi 2 W Image (2,01 gb)](https://www.mediafire.com/file/j2xg2pai9ny07h8/GUIApp_0_5_2_Pi2W.img.gz/file)
+* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/fxg8yue72as0k8m/GUIApp0_5_2_Pi2W.img.gz.sig/file)
+* [Raspberry Pi 5 Image (2,39 gb)](https://www.mediafire.com/file/ukud2xfx7yt11n3/GUIApp0_5_2_Pi5.img.gz/file) 
+* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/ef2dm100zkn0txj/GUIApp0_5_2_Pi5.img.gz.sig/file)
  
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
