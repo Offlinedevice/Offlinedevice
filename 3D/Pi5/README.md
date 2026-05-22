@@ -8,4 +8,4 @@
 ## Wiring schematics Raspberry Pi 5
 Make sure to use the correct Lid as the camera modules differ in height. Use 2 mm screws with the right lenght.
 
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/344116e8c903bb7597abc3f70e1aaa833e193e92/3D/PiZero2W/Schematic_Pi2W_wiring.JPG"></p>
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/c6d1919d25c4566f6ef8298eb496070823950010/3D/Pi5/Schematic_Pi5_wiring.JPG"></p>
