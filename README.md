@@ -13,6 +13,7 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 ## Features
 
 - [x] Create strong encryption keys offline (GnuPG)
+- [x] Use hardware key for login (optional) 
 - [x] Manage your keys and do backups/export or add subkeys etc
 - [x] Sign and validate keys and documents in a secure way
 - [x] Fully open source (APGLv2)
@@ -73,10 +74,10 @@ For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files 
 
 ### Download and burn image
 Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/4855b2368ff977ab67ade932a3cff6f1e0c0f80c/code/GUIApp0_5_0).
-* [Raspberry Pi 2 W Image (2,01 gb)](https://www.mediafire.com/file/j2xg2pai9ny07h8/GUIApp_0_5_2_Pi2W.img.gz/file)
-* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/fxg8yue72as0k8m/GUIApp0_5_2_Pi2W.img.gz.sig/file)
-* [Raspberry Pi 5 Image (2,39 gb)](https://www.mediafire.com/file/ukud2xfx7yt11n3/GUIApp0_5_2_Pi5.img.gz/file) 
-* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/ef2dm100zkn0txj/GUIApp0_5_2_Pi5.img.gz.sig/file)
+* [Raspberry Pi 2 W Image (1,7 gb)](https://www.mediafire.com/file/ra5d7cbtydeca04/GUIApp0_5_3_Pi2W.img.gz/file)
+* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/5tw4zflx3armg6u/GUIApp0_5_3_Pi2W.img.gz.sig/file)
+* [Raspberry Pi 5 Image (2,36 gb)](https://www.mediafire.com/file/pbw7xh3kcnf683i/GUIApp0_5_3_Pi5.img.gz/file) 
+* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/k467ymcaabk0ofm/GUIApp0_5_3_Pi5.img.gz.sig/file)
  
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
