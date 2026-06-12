@@ -74,17 +74,17 @@ For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files 
 
 ### Download and burn image
 Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/4855b2368ff977ab67ade932a3cff6f1e0c0f80c/code/GUIApp0_5_0).
-* [Raspberry Pi 2 W Image (1,7 gb)](https://www.mediafire.com/file/ra5d7cbtydeca04/GUIApp0_5_3_Pi2W.img.gz/file)
-* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/5tw4zflx3armg6u/GUIApp0_5_3_Pi2W.img.gz.sig/file)
-* [Raspberry Pi 5 Image (2,36 gb)](https://www.mediafire.com/file/pbw7xh3kcnf683i/GUIApp0_5_3_Pi5.img.gz/file) 
-* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/k467ymcaabk0ofm/GUIApp0_5_3_Pi5.img.gz.sig/file)
+* [Raspberry Pi 2 W Image (1,7 gb)](https://www.mediafire.com/file/zh01kg6sdxakasa/GUIApp0_5_4_Pi2W.img.gz/file)
+* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/b1rj5w6usdv0w3t/GUIApp0_5_4_Pi2W.img.gz.sig/file)
+* [Raspberry Pi 5 Image (2,36 gb)](https://www.mediafire.com/file/npv0178ovl2yg35/GUIApp0_5_4_Pi5.img.gz/file) 
+* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/j6esfnzptm8g0u9/GUIApp0_5_4_Pi5.img.gz.sig/file)
  
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
 Then burn it to a microSD-card (min 32 gb) with BalenaEtcher (recommended) or the Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power ON for it to start.
 
 ### Or, install the software yourself
-You can choose to install the operating system, programs and libraries yourself. See details in the "Getting started"- document. 
+You can choose to install the operating system, programs and libraries yourself. See details in the "Getting started"- document (not updated). 
 
 ## Many accounts
 There can be multiple accounts on the same device. 
