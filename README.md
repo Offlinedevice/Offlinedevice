@@ -42,7 +42,7 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 - [x] Customize your user settings with theme and colors
 - [x] Include support for Real Time Clock (battery powered hardware clock)
 - [x] Option for strong password generation (also with user entropy)
-- [x] Option for use of hardware keys for secure login etc (NTAG)
+- [x] Option for use of hardware keys for secure login etc (NFC Forum Type 2 Tag)
 
 ## Using the Offine device
 
