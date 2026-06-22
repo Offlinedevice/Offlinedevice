@@ -1,0 +1,2 @@
+A full image that can be burned to a microSD- card with minimum 32 gb storage as linked on the Project main page. Note, the image is only operational with specified hardware: Raspberry Pi Zero 2W, Real Time Clock DS1307 (rechargeable), RFID module RC522 (optional) and a PI camera module (ov5647/imx219/imx708)
+Update to version 0.5.5 can be done with GUIApp_0_5_5_Pi2W.tar.gz (needs the the full image version 0.5.2 or later to be installed first). 
