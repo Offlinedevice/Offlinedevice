@@ -63,21 +63,21 @@ Build the Offline device using common parts. See [Getting started guide](https:/
 
 ### 3D- print parts 
 Print the plastic parts you need (for the Pi2W version):
-* [Base part](https://github.com/Offlinedevice/Offlinedevice/blob/d2cac1ccb760c72b4b48687ddf011962df0110b7/3D/PIzerobox/PIzeroBoxRoundedwithCamera_v2.stl)
-* [Lid for build with camera model 1/2](https://github.com/Offlinedevice/Offlinedevice/blob/d2cac1ccb760c72b4b48687ddf011962df0110b7/3D/PIzerobox/LidPIzeroBoxwithCameraModel3_v2.stl)
-* [Alt. lid for camera model 3 (12 MP and auto focus lens)](https://github.com/Offlinedevice/Offlinedevice/blob/d2cac1ccb760c72b4b48687ddf011962df0110b7/3D/PIzerobox/LidPIzeroBoxwithCameraModel3_v2.stl)
-* [LED guide](https://github.com/Offlinedevice/Offlinedevice/blob/c830ffdbb2a946e84a4a98436ece2bb4b4ff8ee4/3D/PIzerobox/LEDguide.stl)
+* [Base part](https://github.com/Offlinedevice/Offlinedevice/blob/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/3D/PiZero2W/case/PIzeroBoxRoundedCamera-Body.stl)
+* [Lid for build with camera model 1/2](https://github.com/Offlinedevice/Offlinedevice/blob/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/3D/PiZero2W/case/LidPIzeroBoxCamera1_and_2_RFID_high-Body.stl)
+* [Alt. lid for camera model 3 (12 MP and auto focus lens)](https://github.com/Offlinedevice/Offlinedevice/blob/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/3D/PiZero2W/case/LidPIzeroBoxCamera3_RFID_high-Body.stl)
+* [LED guide](https://github.com/Offlinedevice/Offlinedevice/blob/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/3D/PiZero2W/case/LEDguide_high-Body.stl)
 
 See also the folder for other featured 3D- parts (such as the Pi 5).
 
-For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files [here](https://github.com/Offlinedevice/Offlinedevice/tree/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation) and the build guide for it [here](https://github.com/Offlinedevice/Offlinedevice/blob/e2da6f363b4a89710f28b96b2bca7a48f4137ae9/3D/DockingStation/Readme).
+For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files [here](https://github.com/Offlinedevice/Offlinedevice/tree/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/3D/PiZero2W/Dock) and for Pi 5 [here](https://github.com/Offlinedevice/Offlinedevice/tree/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/3D/Pi5/Dock).
 
 ### Download and burn image
-Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/4855b2368ff977ab67ade932a3cff6f1e0c0f80c/code/GUIApp0_5_0).
-* [Raspberry Pi 2 W Image (1,7 gb)](https://www.mediafire.com/file/zh01kg6sdxakasa/GUIApp0_5_4_Pi2W.img.gz/file)
-* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/b1rj5w6usdv0w3t/GUIApp0_5_4_Pi2W.img.gz.sig/file)
-* [Raspberry Pi 5 Image (2,36 gb)](https://www.mediafire.com/file/npv0178ovl2yg35/GUIApp0_5_4_Pi5.img.gz/file) 
-* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/j6esfnzptm8g0u9/GUIApp0_5_4_Pi5.img.gz.sig/file)
+Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/code/GUIApp0_5_5).
+* [Raspberry Pi 2 W Image (1,9 gb)](https://www.mediafire.com/file/u1yymz34bw306mf/GUIApp0_5_5_Pi2W.img.gz/file)
+* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/1mchiugevoigoo4/GUIApp0_5_5_Pi2W.img.gz.sig/file)
+* [Raspberry Pi 5 Image (2,37 gb)](https://www.mediafire.com/file/qp1vwm1ide5rpnn/GUIApp0_5_5_Pi5.img.gz/file) 
+* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/trsfzfcrw5ii3nx/GUIApp0_5_5_Pi5.img.gz.sig/file)
  
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
