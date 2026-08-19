@@ -109,7 +109,7 @@ Create your own multisig signing keys and wallets. Share wallets and signing key
 ## Digital IDs
 Controlling your own digital ID is as important as controlling your own digital money. The Offline device gives an easy way to create IDs and encrypted files that can be uploaded to public keyservers around the word. Including picture ID/key and corporate ID. 
 
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/057b46c69c2efafe1736e6fedd3235699cddb942/Digital_IDs_bl.jpg"></p>
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/9b154f57a38f95b18d00d2a90ae498be03429f5e/content/2_Ethan_Soren_ID.PNG"></p>
 
 ### Update GUI
 Make sure you are running the latest graphical interface, GUIApp.py. Download the latest tar- file from the download section and select "settings -> Update software" on the Offline device. 
