@@ -18,8 +18,7 @@ Follow on Nostr: [npub1srsejseljs22kg580hvcqs3uj3l0fwh8tamhaumdu2gfn3sxs3lskp3ch
 - [x] Encrypt/decrypt and sign files or messages in a secure offline way 
 - [x] Decrypt files or messages and check its signature (GnuPG)
 - [x] Backup and restore function, including complete system cloning
-- [x] Add Bitcoin wallets created from Jade hardware wallet or others with Air-gapped transaction signing etc (Native Segwit supported, BIP84)
-- [x] Use the Offline device to do Air-gapped transaction signing
+- [x] Add Bitcoin wallets created from Jade hardware wallet or others for air-gapped transaction signing (BIP84)
 - [x] Inheritance package
 - [x] Wallet transactions statements 
 - [x] Sign Bitcoin wallet messages to prove ovnership of wallet 
