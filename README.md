@@ -55,7 +55,6 @@ Connect the Offline device with cables to a monitor, a keyboard and a mouse. It 
 * [Bolt card guide](https://github.com/Offlinedevice/Offlinedevice/blob/e34fb841eac5e7634a74db3f75f62b0f8ab91fca/help/boltcardHelp.txt)
 
 ## Start here
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/7b8e1adcc276c47eee72f827f970479651412dab/Device_login2.jfif"></p>
 
 ### Build hardware
 Build the Offline device using common parts. See [Getting started guide](https://github.com/Offlinedevice/Offlinedevice/blob/057806e96a671aa06b3eac34bdbc17a77e54d67b/help/getstartedHelp.txt)
