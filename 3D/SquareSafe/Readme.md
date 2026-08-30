@@ -8,6 +8,8 @@ Safe details:
 ## Using a hardware safe
 The safe can't protect the stored content from heat during a fire or from a thief using heavy equipment or mashinery. Instead it protects from manipulation (planting key loggers and other spyware).
 
-Other casing can be aluminium, steel or 3D printed plasic.
+Other casing can be aluminium, steel or simply 3D printed plasic.
 
 <p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/8d013dcf5f3c254e3e8844619d422d19e836661d/3D/SquareSafe/exploded_drawing.PNG"></p>
+
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/f30de0346bb6f6fcb40dbf5260e04743b16a8817/3D/SquareSafe/SquareSafe_complete.PNG"></p>
