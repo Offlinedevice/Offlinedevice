@@ -6,8 +6,8 @@ Safe details:
  - See also assembly schematics and technical drawings for more details. 
 
 ## Using a hardware safe
-The safe can't protect the stored content from heat during a fire or from a thief using heavy equipment or mashinery. Instead it protects from manipulation (planting key loggers or other spywear).
+The safe can't protect the stored content from heat during a fire or from a thief using heavy equipment or mashinery. Instead it protects from manipulation (planting key loggers and other spyware).
 
-If using LED-chip inside key use transparent PETG-filament or similar for a nice effect.
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/92371ded54371d12cc685f8800c4793bc1a88a83/Pictures/HW_key.JPG"></p>
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/10cf23369970bdf614e7941f38bd6ce6d2ff6fbd/3D/HW_key/NFC_ring.JPG"></p>
+Other casing can be aluminium, steel or 3D printed plasic.
+
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/8d013dcf5f3c254e3e8844619d422d19e836661d/3D/SquareSafe/exploded_drawing.PNG"></p>
