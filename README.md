@@ -107,7 +107,7 @@ Make sure you are running the latest graphical interface, GUIApp.py. Download th
 Using a Raspberry Pi keyboard and mouse supports in getting the Locales (correct layout of keys etc.). Always set the correct time and date before staring to use the device. This is important for encryption key generation and date/time stamps. 
 
 ## Release + Commit Verification
-All releases and commits as of June 28, 2024 are signed by key `BEF873B4691EB2C24E399445FE86F26704C3F74A` (offlinedevice@cyb.org).
+All releases and commits as of June 28, 2024 are signed by key [BEF873B4691EB2C24E399445FE86F26704C3F74APubKey.asc](https://github.com/Offlinedevice/Offlinedevice/blob/159a1fd89408b5ca1548024ed3b90ddb94b2da3f/code/BEF873B4691EB2C24E399445FE86F26704C3F74APubKey.asc).
 
 ### Past Keys
 None.
