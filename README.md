@@ -113,7 +113,7 @@ All releases and commits as of June 28, 2024 are signed by key [BEF873B4691EB2C2
 None.
 
 ## Donations
-If you'd like to help us with the cost of running the Offline device project you can send a payment to us via our BTC address bc1qyufesfamy2qvuc0twce3xsqh8nwrs48placp6f.
+If you'd like to help us with the cost of running the Offline device project you can send a payment to us via our BTC address bc1qd0ufcz2xptanlgj2xagzpz46cqdwkvlu69m2vs.
 
 Thank you.
 
