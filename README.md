@@ -76,7 +76,7 @@ You can choose to install the operating system, programs and libraries yourself.
 ## Personalized accounts
 Change the look and feel of your account. 
 
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/59d39962784e9c6b16abf7e91ae82ea16287afc7/content/1_Welcome_Ethan_Soren.png"></p>
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/54505e8acef675cfb9a28163842bb98aab572f35/content/Welcome_Ethan_v058.png"></p>
 
 ## Manage encryption keys
 The device allows you to create your own keys in a secure (and offline) enviroment. Then use and manage the encryption keys on your device. Adding signatures, signing other keys and documents, encrypting and decrypting etc. 
