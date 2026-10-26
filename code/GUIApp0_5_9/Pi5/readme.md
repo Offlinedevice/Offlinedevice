@@ -8,7 +8,7 @@
  - Lithium RTC clock battery, 3 V
  - Pi camera module 1, 2 or 3
 
- - ### Wiring schematics Raspberry Pi 5
+### Wiring schematics Raspberry Pi 5
 Make sure to use the correct case as there is versions with and without RGB- LED diod. Use 2 mm screws with the right lenght.
 
 <p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/c6d1919d25c4566f6ef8298eb496070823950010/3D/Pi5/Schematic_Pi5_wiring.JPG"></p>
