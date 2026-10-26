@@ -1,7 +1,8 @@
 ﻿
-Bitcoin wallets
------------------------------
-The Offline device has several way to add, create and store Bitcoin wallets. These are:
+Bitcoin 
+----------------------------------------------------------
+
+The Offline device has several way to add, create, store and interact with Bitcoin wallets. 
 
 1. Generate a single BTC address key-pairs:
     Just a private/public keypair. No seed words, no extended public key or passwords. 
@@ -9,24 +10,27 @@ The Offline device has several way to add, create and store Bitcoin wallets. The
     When you want to spend the Bitcoin move the private key to an trusted online device.
 
 2. Generate a wallet seed directly on the Offline device:
-    The Offline device generates a new 12 words seed phrase (with or without passphrase).
+    The Offline device generates a new 24 words seed phrase (with or without passphrase).
 
-3. Add a wallet seed from a hardware device:
+3. Add an existing wallet seed from another hardware device:
     A trusted hardware wallet such as the Blockstream Jade are used to generate a new wallet (12 of 24 words and with or without passphrase). 
 
-4. Generate a Bitcoin wallet from random numbers of rolling dices
-    Get the random words for your seed phrase (wallet seed) from rolling dices. This mean that you don't have to rely on any computer hardware OR computer software to get the seed for your wallet.
+4. Import a wallet from another Offline device using encrypted and signed files. This could also be a Multisig wallet.
+
+5. Generate a Bitcoin wallet from random numbers of rolling dices:
+    Get the random words for your seed phrase (wallet seed) from rolling dices. This mean that you don't have to rely on any computer hardware OR computer software to get the seeds for your wallets.
     Just make sure nobody is recording or watching you while you are doing it. 
      
-5. Store wallets:
+6. Store wallets:
     When you already have a wallet you include it in the Secure folder's "Wallets" section. 
-    This could be a seed phrase, a login to a Lightning hub or a recovery sentence etc.
+    This could be a seed phrase, a login to a Lightning hub or wallet provider. Or maybe a recovery sentence etc.
 
 
-First option is good when youo like to store some Bitcoins without have the risk of anyone tracking your holdings using Xpub (a public key that can find all Bitcoins in a wallet made from seed words).
+First option is good when you like to store some Bitcoins without have the risk of anyone tracking your holdings using Xpub (a public key that can find all Bitcoins in a wallet made from seed words).
 
-Second option is similar to option number three but easier and faster as the seed words don't have to be manually copied from the Jade to the Offline device. Warning! It may not have the same level of randomness when creating the seed. And the algoritm and code of the Offline device is not as well tested, and trusted, as that of the Jade.   
-IMPORTANT! You can always recover the wallet with the Jade if you have the seed words/SeedQR (and any passphrase) written down. The use of the Offline device is not mandatory. The "SeedQR" is just an easy and quick way to transfer all the seed words to a signing device.
+Second option is fast as the seed words don't have to be manually created. Warning! It may not have the same level of randomness when creating the seed. And the algoritm and code of the Offline device is not that well battle tested, and trusted as lets say a Blockstream Jade.   
+IMPORTANT! You can always recover the wallet with a Blockstream Jade hardware wallet if you have the seed words/SeedQR (and any passphrase) written down. The use of the Offline device is not mandatory. The "SeedQR" is an easy and quick way to transfer all the seed words to a signing device.
+
 Backups for each Bitcoin wallet must be stored in multiple copies and locations. And also on different mediums if possible.
 
 Third option uses a well known hardware device for generating the wallet seed. When selecting "SeedQR scanning of the seed" from the Jade each time it is powered on has some benefits. The benefits include:
@@ -36,18 +40,18 @@ Third option uses a well known hardware device for generating the wallet seed. W
    b) as the Jade doesn't hold any keys inside (after its shut off) it can be used for multiple wallets and even used by many different persons.  
 
 When using the Advanced option in Jade for generating a wallet it is needed to select to write down the "SeedQR" on paper. If not, the Jade will assume that you plan to have a PIN-code and store some secret on the device. But when using the Jade together with an Offline device it's only needed to write down all the seed words (and BIP39 passphrase if any) and not to "dot out" the QR-code. As an Offline device can generate the relevant SeedQR and Xpub based on the entered seed words (and any passphrase).
-The Xpub can be scanned from the Offline device PC screen instead of from the Jades small screen. IMPORTANT! You can always recover the wallet with a Jade if you have the seed words/SeedQR (and any passphrase). The use of the Offline device is not mandatory.  
+The Xpub can be scanned from the Offline device PC screen instead of from the Jades small screen. IMPORTANT! You can always recover the wallet with a Jade if you have the seed words/SeedQR (and any passphrase).  
 
-Fouth option is if you maybe don't have another hardware wallet that cn generate seed words and you don't want to trust the random generator (or code) of the Offline device. Each word can be checked that it corresponds to the binary representation entered by rolling the dice. Dice value 1, 2 and 3 represent a zero (0) and values 4, 5, and 6 represents a one (1). See Internet (AI?) to learn about converting binary to decimal and also about the list of words in BIP39 (Bitcoin standard).
+Fouth option is if you friend or colleague that generate a wallet and you like to get it sent to you over the Internet. The encryption prevents manipulation and people spying on it, and as the file is cryptographically signed you can verify the sender of the file.
 
-Fifth option is to make an electronic copy for your wallet. It can include the wallets name, seed words, passphrase and a general description etc. When you then make a backup for the Offline device you have also a backup of your wallets secret data.
+Fifth option is to make a truly random wallet seed with your own random generation process. 
 
-Both option 2, 3 and 4 adds the information about the added/created wallet into the Secure folder's "Wallets"- section. It good practice to add information in the description for newly added or created wallets on HOW they was generated (so afterward you know how much it can be trusted).
-When typing in the seed words it is important that the spelling is exactly right. If not the Offline device will produce an error message in the end and ask you to try again.
-When scanning the Jade for the signed transaction it helps to have a fixture or similar that raises the surface around the Jade to the same hight as the screen so that the camera reading the QR can auto focus better.
+Both option 2, 3, 4 and 5 adds the information about the added/created wallet into the Secure folder's "Wallets"- section. It good practice to add information in the description for newly added or created wallets on HOW they were generated (so afterward you know how much it can be trusted).
+When manually typing in the seed words it is important that the spelling is exactly right. If not the Offline device will produce an error message in the end and ask you to try again.
 
 Signing transactions using the camera and QR-codes
------------------------------
+----------------------------------------------------------
+
 To make any Bitcoin on-chain transaction there are three basic steps:
 1. Create the transaction. This include getting "From" and "To -addresses from the wallets etc. It's normally done with an online device (such as a phone).
 2. Signing the transaction with your private key. THIS can be done with an offline device. This will protect your secret key from ever touching the Internet.
@@ -61,19 +65,42 @@ A new QR-code is then generated. This is then scanned using your phones camera. 
 Is a level of security that is unmatched by pretty much anything you can find.. Anywhere. 
 
 Signing Bitcoin messages and keeping tabs
------------------------------
+----------------------------------------------------------
+
 With the Offline device you can create any number of wallets. Therefor you can have one wallet ONLY for interacting with, let's say, Coinbase and another wallet for interacting with your business clients or your local tax office. Each wallet has a seperate accounting. If you get a question from any of them to "prove ownership" for your wallet, you can do so by selecting "Sign a message" for that specific wallet.
 Or if you are the manager of a department and the company you work for has a new, let's say, account for travel expenses.  The main office can create the wallet and encrypt the seed and send to you. You decrypt it on your offline device and add the new wallet alongside the other wallets you have. And now you can start signing expenses. 
 
+Using Multisig wallets
+----------------------------------------------------------
+
+A Multisig wallet is a wallet that require multiple keys to sign a transaction. The wallet itself does not have its own secret (seed) instead it has a set of rules about how it should work and the public parts of two or more "Signing keys".
+Import signing keys to the Offline device (the keys must follow the "Native segwit" standard called BIP48). Or create as many signing keys as you need on the Offline device itself. Then create the Multisig wallet on the device by entering details such as name etc and select what signing keys it should use and the "rules" such as "2 out of 3 signatures". 
+Multisig wallet signing keys can be signed by PGP-keys on the system. This created a detached signature. Someone else can then verify who has signed the signing key (if they have access to that persons public PGP-key.
+Wallets can be exported and imported using encrypted messaging.
+
+Multisig local transaction signing:
+After the wallet is created you can export the public parts of the relevant signing keys to a "companion" app (of your choice, could be Nunchuck or Bluewallet etc). In the app/wallet you again state the rules (ex 2 of 3 signatures). The companion app are online so it can construct transactions and broadcast them to the network. After a transaction is created you click "sign" and "Export as QR"- the unsigned transaction (or use files) to the Offline device.
+The transaction is reviewed on the Offline device and then signed. The, now, signed transaction is transferred back to the companion app also via QR-code or file. When enough signatures has been colleted broadcast the transaction to the Bitcoin network.
+
+Multisig remote transaction signing:
+For remote signing you first needs to exchange public PGP-keys with eachother (in order to encrypt/decrypt and sign/verify messages back and forth).
+To get a signature from a signing key that you don't have the private key for (maybe your boss has it or some secure trusted third party) you open the wallet on the Offline device and select "Sign transaction -> Request signature" next to the relevant signing key. This opens up a new window where you type a message (ex. "Hi please sign this transaction..."). Then select your private (PGP) encryption key (in the bottom right of the screen) that you like to sign the message with and also select the recipients public key to encrypt the message TO.
+Send the encrypted and signed file over to the person/company that you want to sign your new transaction, he/she reviews it and signs it. He/she encrypts and signs and sends back the now partially signed transaction. When you receive it you open up the file and verify that it was signed by the right person and then either show it as a QR-code to read with your phone/computer or save it to a USB-stick and move it over to your phone/computer that have the wallet with the created transaction (that is waiting for just that signature).
+  
+Each signing keys used for Multisig wallets signing can have a detached PGP- signature. E.g a project leader can tell all his teams "only singing keys that are signed by me personally are allowed to be used in project related wallets etc.  
+
+
 Bolt cards
------------------------------
+----------------------------------------------------------
+
 Bolt cards are physical cards of anything that can have a NTAG (microchip and antenna) inside it. A Bolt card is linked to a custodial wallet online. They are programmed with apps found on the app stores and using a common smartphone (with NFC*). The main benefit of using a Bolt card is that it can be used anonymously, as it doesn’t have any MAC-address, GPS or IP-address etc. And it doesn’t require any Internet connection, battery or phone (with a sim-card). But for it to be really anonymous, you need to create an account for the custodial wallet on a public computer (or using a TOR- browser). And program it using an offline NFC-capable device/phone. 
 Your Bolt cards data can be stored in a secure archive and then accessed through a graphical interface. For loading, reset and programming (using QR-codes that are scanned with a smartphone). 
 * Near Field Communication
 
 
 Programming the Bolt cards
------------------------------
+----------------------------------------------------------
+
 Note: A Bolt card that is already in use must first be wiped with a specific “reset code” before it can be re-used. That is why it is always a good idea to save the reset code when creating/programming a new card. 
 On a computer create a user account at a LNBits Hub such as https://lates.lightningok.win etc. For privacy use a computer that is not linked to you, or use a Tor-browser if possible). 
 Create a wallet in your account.
@@ -100,8 +127,9 @@ Then add some more lines so you have a text file with eight lines (in the exact 
 Alternativly, get an encrypted file containing the above information. Then move it to the Offline device using a USB stick (before decryption). The file must be signed and a copy of the senders public key needs to be on your local keychain (so you can verify the signature). In this way a Bolt card (the data) can be sent over the Internet AND the receiver can know who it came from AND that it was not viewed or manipulated by anybody during the transfer. 
 Make sure to only use an anonomous smartphone connected to a public wifi when programming a Bolt card. 
 
-Load the Bolt card with BTC.
------------------------------
+Load the Bolt card with BTC
+----------------------------------------------------------
+
 Sending Bitcoin to your Bolt card should always be done using a Tor browser or a public computer (that has no link to your personal identity).
 * Open a browser and go the webpage ff.io or boltz.exchange/swap. Use liquid Bitcon (l-BTC) to save on fees.
 * Scan or copy the “Load”-QR code from the offline device and paste it into the “Destination”- field.
@@ -112,13 +140,15 @@ To load the Bolt card from an offline wallet address you simply need to scan the
 
 
 Reset the Bolt card 
------------------------------
+----------------------------------------------------------
+
 If you like to re-use the Bolt card you have to reset it with the exact reset code that was generated when programming it in the first place. If you don't have this code you can't re-use the card, it's that simple.
 Open the "Boltscard NFC Programmer”-app on your phone and select reset option. Scan the reset QR-code with the phone's camera. Hit reset card and hold the card up to the phone's NFC chip (on the back of the phone). If it doesn't work please try one more time (as there could have been some disruption in the NFC transfer).
 
 
 Inheritance 
------------------------------
+----------------------------------------------------------
+
 An inheritance package is a way to leave your encrypted data, such as Bitcoin wallets etc, to a third party without risking that it gets stolen. It consists of three files:
 1. The encrypted archive. This contains the parts from the offline device you have selected. It is encrypted with a seperate key.  
 2. The encryption key.

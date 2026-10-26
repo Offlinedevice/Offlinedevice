@@ -27,7 +27,7 @@ Using the different keys on the Offline Device own local keychain you can do dif
 * Signing other peoples public keys (and then export it to a file and giving it to the owner of the key. In this way they can build trust for their key)
 * Timestamp signatures and files on the Bitcoin blockchain, using sha256sum(s), to generate an unique BTC address (bech32 encoded, script type p2wsh) that a transaction is sent to and thus recorded it on the blockchain).
 
-Key validity, (owner) trust and the "Web-of-trust
+Key validity, (owner) trust and the "Web-of-trust"
 -----------------------------
 Keys have two different types of "trust". One is how much trust there is that the owner of the key can understand and conduct proper key signing. The other is trust in the key itself that it's legit. 
 Examples:
