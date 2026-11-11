@@ -73,11 +73,6 @@ Then burn it to a microSD-card (min 32 gb) with BalenaEtcher (recommended) or th
 ### Or, install the software yourself
 You can choose to install the operating system, programs and libraries yourself. See details in the "Getting started"- document (not updated). 
 
-## Personalized accounts
-Change the look and feel of your account. 
-
-<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/54505e8acef675cfb9a28163842bb98aab572f35/content/Welcome_Ethan_v058.png"></p>
-
 ## Manage encryption keys
 The device allows you to create your own keys in a secure (and offline) enviroment. Then use and manage the encryption keys on your device. Adding signatures, signing other keys and documents, encrypting and decrypting etc. 
 
@@ -94,6 +89,11 @@ Create your own multisig signing keys and wallets. Share wallets and signing key
 <p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/59d39962784e9c6b16abf7e91ae82ea16287afc7/content/3_3_Multisig_wallet_signing_keys.PNG"></p>
 
 <p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/59d39962784e9c6b16abf7e91ae82ea16287afc7/content/3_4_Multisig_wallet_signing.PNG"></p>
+
+## Banking
+Create invoices and send them to your clients, encrypted with the clients public key and signed with your private key. And receive encrypted and signed invoices from your approved service providers.
+
+<p align="center"><img src="https://github.com/Offlinedevice/Offlinedevice/blob/cb6a57e5f8b3ddd3c3316e7d9e7ac5428f43152c/content/Client_profile.png"></p>
 
 ## Digital IDs
 Controlling your own digital ID is as important as controlling your own digital money. The Offline device gives an easy way to create IDs and encrypted files that can be uploaded to public keyservers around the word. Including picture ID/key and corporate ID. 
