@@ -61,10 +61,10 @@ For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files 
 
 ### Download and burn image
 Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/releases/tag/v0.5.9-beta).
-* [Raspberry Pi 2 W Image (1,59 gb)](https://www.mediafire.com/file/xgxumvbnkwlcen8/GUIApp_0_6_0_Pi2W.img.gz/file)
-* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/ckj0gz4nk67m4s6/GUIApp_0_6_0_Pi2W.img.gz.sig/file)
-* [Raspberry Pi 5 Image (2,39 gb)](https://www.mediafire.com/file/xnt15ppkmonrs8g/GUIApp0_5_9_Pi5.img.gz/file) 
-* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/65fkgsx5pbnf5js/GUIApp0_5_9_Pi5.img.gz.sig/file)
+* [Raspberry Pi 2 W Image (1,59 gb)](https://www.mediafire.com/file/8ri2fq3082gb1hg/GUIApp_0_6_1_Pi2W.img.gz/file)
+* [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/mp1lmfi8uraq8kh/GUIApp_0_6_1_Pi2W.img.gz.sig/file)
+* [Raspberry Pi 5 Image (2,41 gb)](https://www.mediafire.com/file/doqqx6m49nic780/GUIApp_0_6_1_Pi5.img.gz/file) 
+* [Raspberry Pi 5 Image Signature](https://www.mediafire.com/file/txl0bmd3egzyw7t/GUIApp_0_6_1_Pi5.img.gz.sig/file)
  
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
