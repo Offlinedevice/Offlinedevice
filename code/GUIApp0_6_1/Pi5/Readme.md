@@ -16,4 +16,4 @@ Make sure you use the correct 3D case files as there is versions with and withou
 ### Software and operating system
 The full image can be burned to a microSD- card with minimum 32 gb storage. Make sure to use a high quality card.
 Note, the image is only operational with specified hardware stated above. The RFID module and RGB- LED diod is optional.
-The GUIApp.py version 0.6.1 can be installed using GUIApp_0_6_1_Pi5.tar.gz. It needs the the full image (operating system) version 0.5.9 or later to be installed first. 
+The GUIApp.py version 0.6.1 can be installed using GUIApp_0_6_1_Pi5.tar.gz. It needs the the full image (operating system) version 0.6.0 or later to be installed first. 
