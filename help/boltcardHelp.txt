@@ -90,6 +90,37 @@ Send the encrypted and signed file over to the person/company that you want to s
 Each signing keys used for Multisig wallets signing can have a detached PGP- signature. E.g a project leader can tell all his teams "only singing keys that are signed by me personally are allowed to be used in project related wallets etc.  
 
 
+Bitcoin Banking - sending and receiving invoices
+----------------------------------------------------------
+
+To generate a new Bitcoin address and send it in an encrypted and signed message to someone is a great way to ask for a payment. But sometimes there is a need to specify more than just the Bitcoin on-chain address and maybe amount. that you want the person to transfer Bitcoin to. 
+Thats why we have invoices. In an invoice you can state the Bitcoin address, the amount, what the payment is for (and what it's not for), the terms and conditions and the latest date for the payment etc etc. And with the Offline device the invoice is encrypted and signed before ever leaving the device. That way the receiver of the invoice can verify that it comes from the correct sender and that it has not been seen or manipulated before the receiver decrypted it. 
+
+The fact that it has been signed (cryptographically) by the sender provides proof later on what the promise/service/product was from the service provider and also the transaction can be traced as the Bitcoin address was included in the invoice.
+Example:
+
+Step 1: The seller creates an invoice saying "I will do this and this if you send this much Bitcoin to this address before his date. The seller double checks that all he wrote looks OK and then encrypts it with the buyers public key and signs the whole thing with his private key.
+
+Step 2: The buyer receives the file and stores the encrypted+signed file for future reference. He then decrypts it with his private key and reads what it says. He agrees and transfer the stated amount to the address that was given.
+
+Step 3: If the buyer later on realizes that the product or service had som problem with it or he wants to use the guarantee that the seller provided in a written statement in the invoice. The buyer can contact the seller and show that the product/service don't fulfill what was agreed, and cryptographically signed by the seller, in the invoice. 
+
+Bonus: When the buyer makes the next backup of his Offline device the encrypted+signed invoice will alse be backed-up. 
+
+
+Additional functionallity:
+
+* Buyer can use the sellers public key (obtained from his website etc) and send an encrypted request to the sellers (service provider) asking for his details. In the encrypted message to the new service provider the buyers include also his publi key. Saying that "if you send anything to me please use this key to encrypt all communications.
+
+* Seller (service provider) can use the buyers request for information to create an "Client" (Invoice receiver) on his system. 
+
+* After the seller added the new client to his system he can "Export it to client" in an encrypted and signed message. he service provider can also choose to include a watch-only wallet that the seller then shares with the buyer. E.g the buyer (client) can watch all the transactions he made to the buyer (using an online companion app/wallet) and also extract new Bitcoin address if needed (without having to ask for a new invoice.
+
+* When the buyer decrypts an invoice the system automatically checks if the signature is correct and if the sender is an pre-approved service provider on his system. Thus avoiding spoof invoices that is claiming to be from someone they are not.
+
+* All invoices (both outgoing and incoming) can be exported to CSV- files for further processing.
+
+
 Bolt cards
 ----------------------------------------------------------
 
