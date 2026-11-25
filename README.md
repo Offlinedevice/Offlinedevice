@@ -60,7 +60,7 @@ See also the folder for other featured 3D- parts (such as the Pi 5).
 For printing the Docking station (Raspberry Pi Zero 2W) check out the 3D- files [here](https://github.com/Offlinedevice/Offlinedevice/tree/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/3D/PiZero2W/Dock) and for Pi 5 [here](https://github.com/Offlinedevice/Offlinedevice/tree/924e57b3c216d11b1677c1a1f53b54e1da3e4c15/3D/Pi5/Dock).
 
 ### Download and burn image
-Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/releases/tag/v0.5.9-beta).
+Download the latest full image and verify it with the corresponding signature. Select the one suitable for your system. Latest update files are found [here](https://github.com/Offlinedevice/Offlinedevice/tree/main/code/GUIApp0_6_2).
 * [Raspberry Pi 2 W Image (1,59 gb)](https://www.mediafire.com/file/b6yda5rnsqwyavi/GUIApp_0_6_2_Pi2W.img.gz/file)
 * [Raspberry Pi 2 W Image Signature](https://www.mediafire.com/file/6d964o4sorh0g7i/GUIApp_0_6_2_Pi2W.img.gz.sig/file)
 * [Raspberry Pi 5 Image (2,46 gb)](https://www.mediafire.com/file/au5k2pxwdnheozp/GUIApp_0_6_2_Pi5.img.gz/file) 
@@ -68,7 +68,7 @@ Download the latest full image and verify it with the corresponding signature. S
  
 Make sure you have the correct public key (see below) imported to your local keychain. Then place the two downloaded files (the signature and the image) in the same directory and run command: gpg --verify signature_files_name.sig image_files_name.img.gz (insert the real name for the files..).
 
-Then burn it to a microSD-card (min 32 gb) with BalenaEtcher (recommended) or the Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power ON for it to start.
+Then burn it to a microSD-card (min 32 gb) with BalenaEtcher (recommended) or the Raspberry Pi Imager. Please note that it might be necessary to restart the device after initial power ON for it to start. Use a high quality micro SD card (rated A2 for running apps!) such as Sandisk Extreme or Sandisk Extreme Pro etc.
 
 ### Or, install the software yourself
 You can choose to install the operating system, programs and libraries yourself. See details in the "Getting started"- document (not updated). 
